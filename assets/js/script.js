@@ -35,16 +35,18 @@ function burgerMenu(selector) {
 
     function toogleMenu() {
         menu.toggleClass('burger-menu_active');
-
-        if (menu.hasClass('burger-menu_active')) {
-            $('body').css("overflow", "hidden");
-        } else {
-            $("body").css("overflow", "visible")
-        }
     }
 }
 
 burgerMenu('.burger-menu');
+$(document).mouseup(function(e) {
+    var $target = $(e.target);
+    if ($target.closest(".burger-menu").length === 0) {
+        $(".burger-menu").removeClass("open");
+
+    }
+});
+
 window.onscroll = function showHeader() {
     let header = document.querySelector(".header");
     if (window.pageYOffset > 200) {

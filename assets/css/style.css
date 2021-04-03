@@ -225,12 +225,13 @@ header .right-pc {
     align-items: center;
     justify-content: center;
     background: #f34747;
-    border-radius: 30px;
+    border-radius: 15px;
+    letter-spacing: 1px;
     color: #ffffff;
     transition: .2s;
 }
 .button2 {
-    border-radius: 20px;
+    border-radius: 10px;
     border: 3px solid #f34747;
     height: 45px;
     font-size: 12px;
