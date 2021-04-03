@@ -170,7 +170,7 @@ header .right-pc {
 /*header desctop styles*/
 #home{
     padding: 343px 0 60px 0;
-    background: url("../images/home-bg.png")no-repeat;
+    background: url("../images/offer_bg_mob.png")no-repeat;
     background-size: cover;
 }
 #home .home-box {
@@ -865,54 +865,85 @@ footer {
 .callback-popup {
     position: relative;
 }
-#callback {
+#callback-form {
     padding: 25px 22px 22px 22px;
     border-radius: 0 0 10px 10px;
+    width: 375px;
     background-color: rgb(28, 28, 28);
-    position: absolute;
-    top: 58px;
-    left: 0;
-    width: 100%;
+    opacity: 0.949;
+    z-index: 123;
     display: block;
     transition: .8s ease-in;
-    opacity: 0;
 }
-.call-me-box {
-    width: 286px;
-}
+
 .call-me {
     position: relative;
 }
-#callback .section-title {
-    font-size: 12px;
+#callback-form .section-title {
+    font-size: 16px;
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 14px;
     text-align: center;
 }
-#callback button.mfp-close {
+#callback-form button.mfp-close {
     display: none;
 }
-#callback form input {
+#callback-form form{
+    width: 100%;
+}
+#callback-form form input {
     border: none;
     width: 100%;
     border-radius: 10px;
     background-color: rgb(49, 47, 47);
     height: 45px;
-    font-size: 12px;
+    font-size: 16px;
     color: #6f6e6e;
     font-weight: 500;
     padding: 20px;
+    text-align: center;
     margin-bottom: 10px;
 }
-#callback form button {
+#callback-form form button {
     width: 100%;
     border: none;
     border-radius: 10px;
-    height: 45px;
+    font-size: 12px;
+    font-weight: 500;
+    height: 40px;
     text-transform: uppercase;
+}
+#callback-form form a {
+    color: #f34747;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+    margin: 22px auto 0 auto;
+    display: block;
 }
 .white-popup-block {
     margin: 0 auto;
+}
+
+#callback-ok {
+    width: 375px;
+    padding: 23px 0 70px 0;
+    text-align: center;
+}
+#callback-ok p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 24px;
+}
+#callback-ok a {
+    color: #f34747;
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 87px;
+    display: block;
 }
 /*callback-popup */
