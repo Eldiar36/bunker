@@ -54,12 +54,15 @@
         border-left: 1px solid #f34747;
         border-right: 1px solid #f34747;
     }
-    header nav .nav-menu{
+    header nav .nav-menu {
         border-right: 1px solid #f34747;
+        width: 77%;
     }
-
+    .call-me-box {
+        width: 245px;
+    }
     header nav .nav-menu li {
-        padding: 16px 35px;
+        padding: 14px 35px;
     }
     header nav .nav-menu li a {
         font-size: 13px;
@@ -254,7 +257,9 @@
     .white-popup-block {
         width: 100%;
         margin: 10% auto;
-        padding: 30px 10px;
+        padding: 30px 0;
+        border: none;
+        background: none;
     }
     .white-popup-block .contacts {
         margin-top: 20px;
@@ -265,5 +270,16 @@
     }
     .white-popup-block .section-title {
         margin-bottom: 20px;
+    }
+    .white-popup-block {
+        border: none;
+        background: none;
+    }
+    .mfp-bg {
+        opacity: 1;
+    }
+    .mfp-container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

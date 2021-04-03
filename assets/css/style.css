@@ -64,8 +64,8 @@ header .header-top .right {
     display: flex;
     align-items: center;
 }
-header .header-top .right .call{
-    margin-left: 15px;
+header .header-top .right .call {
+    margin-left: 35px;
 }
 header .logo{
     z-index: 999;
@@ -74,13 +74,7 @@ header .logo img {
     width: 135px;
     height: 24px;
 }
-header .burger-menu_button svg {
-    fill: #f34747;
-    transform: rotate(90deg);
-}
-header .call svg {
-    fill: #f34747;
-}
+
 .burger-menu {
     display:block;
 }
@@ -118,9 +112,9 @@ header .call svg {
     font-size: 12px;
     color: #ffffff;
     font-weight: 500;
+    letter-spacing: 1px;
     text-transform: uppercase;
     display: flex;
-
 }
 .burger-menu .burger-menu_nav .mobile-menu li a svg {
     margin-right: 12px;
@@ -202,6 +196,7 @@ header .right-pc {
     width: 263px;
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 500;
 }
 #home .home-box .button:hover{
     color: #ffffff;
@@ -225,14 +220,15 @@ header .right-pc {
     align-items: center;
     justify-content: center;
     background: #f34747;
-    border-radius: 15px;
+    border-radius: 10px;
     letter-spacing: 1px;
     color: #ffffff;
     transition: .2s;
+    font-weight: 500;
 }
 .button2 {
     border-radius: 10px;
-    border: 3px solid #f34747;
+    border: 1px solid #f34747;
     height: 45px;
     font-size: 12px;
     color: #f34747;

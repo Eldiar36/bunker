@@ -21,32 +21,29 @@ $('.popular-slider').slick({
     ]
 });
 
-function burgerMenu(selector) {
-    let menu = $(selector);
-    let button = menu.find(".burger-menu_button");
-    let links = menu.find(".link");
-    let overlay = menu.find("burger-menu_overlay");
-    button.on("click", (e) => {
-        e.preventDefault();
-        toogleMenu();
-    });
-    links.on("click", () => toogleMenu());
-    overlay.on("click", () => toogleMenu());
+let hamburger = document.querySelector('.burger-menu_button');
+let menu = document.querySelector('.burger-menu');
 
-    function toogleMenu() {
-        menu.toggleClass('burger-menu_active');
-    }
+const toggleMenu = () => {
+    menu.classList.toggle('burger-menu_active');
 }
 
-burgerMenu('.burger-menu');
-$(document).mouseup(function(e) {
-    var $target = $(e.target);
-    if ($target.closest(".burger-menu").length === 0) {
-        $(".burger-menu").removeClass("open");
+hamburger.addEventListener('click', e => {
+    e.stopPropagation();
 
-    }
+    toggleMenu();
 });
 
+document.addEventListener('click', e => {
+    let target = e.target;
+    let its_menu = target === menu || menu.contains(target);
+    let its_hamburger = target === hamburger;
+    let menu_is_active = menu.classList.contains('burger-menu_active');
+
+    if (!its_menu && !its_hamburger && menu_is_active) {
+        toggleMenu();
+    }
+})
 window.onscroll = function showHeader() {
     let header = document.querySelector(".header");
     if (window.pageYOffset > 200) {
