@@ -140,4 +140,49 @@ new universalParallax().init({
 });
 
 
+//табы
+(function($) {
+    $(function() {
+        $("ul.tabs__caption").on("click", "li:not(.active)", function() {
+
+            $(this)
+
+                .addClass("active")
+                .siblings()
+                .removeClass("active")
+                .closest("div.tabs")
+                .find("div.tabs__content")
+                .removeClass("active")
+                .eq($(this).index())
+                .addClass("active");
+        });
+    });
+})(jQuery);
+jQuery(function($){
+    $("#reviews-rating").viewportChecker({
+        callbackFunction:function(){
+            $(".progress-bar").hide();
+            $(".progress-bar").show();
+        }
+    });
+});
+$('.nav-menu li').on('click', function() {
+    $(this).addClass('active')
+        .siblings().removeClass('active');
+})
+$('.mobile-menu li').on('click', function() {
+    $(this).addClass('active')
+        .siblings().removeClass('active');
+})
+const elem = document.getElementById ('datepicker');
+const datepicker = new Datepicker (elem, {
+    autohide: true,
+    disableTouchKeyboard:false,
+    format: 'mm . dd . yyyy',
+    l:"ru",
+    allowOneSidedRange: true,
+    nextArrow: '>',
+    prevArrow: '<',
+    weekStart: 1,
+});
 

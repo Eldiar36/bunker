@@ -62,13 +62,27 @@
         width: 245px;
     }
     header nav .nav-menu li {
-        padding: 14px 35px;
+        padding: 14px 30px;
+    }
+    header nav .nav-menu li.active a {
+        color: #f34747;
     }
     header nav .nav-menu li a {
         font-size: 13px;
         color: #ffffff;
         text-transform: uppercase;
         font-weight: 600;
+        letter-spacing: 1px;
+        transition: .4s ease-in-out;
+    }
+    .main-banner p {
+        margin-bottom: 22px;
+    }
+    #visiting .section-title {
+        margin-bottom: 12px;
+    }
+    header nav .nav-menu li a:hover{
+        color: #f34747;
     }
     header nav .call-me {
         font-size: 13px;
@@ -199,6 +213,8 @@
     .footer-center .contacts .number-box {
         display: flex;
         flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
     }
     .footer-center .contacts .number-box a:first-child {
         margin-right: 0;
@@ -215,7 +231,7 @@
         margin: 0 auto;
         height: 161px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         text-align: center;
     }
     .main-banner br {
