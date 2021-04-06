@@ -178,7 +178,7 @@ $('.mobile-menu li').on('click', function() {
 const elem = document.getElementById ('datepicker');
 const datepicker = new Datepicker (elem, {
     autohide: true,
-    disableTouchKeyboard:false,
+    disableTouchKeyboard:true,
     format: 'mm . dd . yyyy',
     l:"ru",
     allowOneSidedRange: true,
