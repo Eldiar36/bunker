@@ -583,6 +583,13 @@ footer {
 .white-popup-block .select {
     margin-bottom: 44px;
 }
+.select {
+    position: relative;
+    display: block;
+    min-width: 220px;
+    width: 100%;
+    max-width: 400px;
+}
 .select.select1 {
     position: relative;
     display: block;
