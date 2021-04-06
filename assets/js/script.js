@@ -1,6 +1,7 @@
 $('.popular-slider').slick({
     infinite: false,
     dots: false,
+
     slidesToShow: 1.15,
     slidesToScroll: 1,
     responsive: [
@@ -186,3 +187,10 @@ const datepicker = new Datepicker (elem, {
     weekStart: 1,
 });
 
+jQuery(function($){
+    $(".slot_container").viewportChecker({
+        callbackFunction:function(){
+            $(".slot_container").addClass('active')
+        }
+    });
+});

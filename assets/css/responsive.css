@@ -122,6 +122,7 @@
     }
     #home .home-box h1 {
         font-size: 45px;
+        margin-top: 25px;
         line-height: 55px;
     }
     #home .home-box .button {
@@ -252,6 +253,90 @@
     #popular .container {
         padding: 0 20px;
     }
+    /*hub-excursion styles start*/
+    #excursion .excursion-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    #excursion .button.all {
+        width: 292px;
+        margin: 40px auto 0 auto;
+    }
+    #excursion .excursion-box .ex-card {
+        margin-bottom: 0;
+    }
+    #points .popular-slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 41px;
+    }
+    #faq .section-title {
+        font-size: 16px;
+        margin-bottom: 33px;
+    }
+    #faq .faq-box {
+        padding: 35px;
+    }
+    #faq .faq-box .question {
+        margin-bottom: 2px;
+    }
+    #guides .guide-wrap{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 80px;
+    }
+    #guides .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 96px 16px 20px 16px;
+        margin: 0;
+    }
+    #guides .tabs__content img {
+        height: 300px;
+    }
+    #guides .address {
+        margin: 0;
+    }
+    #special-offer {
+        padding: 37px 0 30px 0;
+        background: url("../images/special-offer-pc.png")no-repeat center;
+        background-size: cover;
+    }
+    #special-offer .btn-groups {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #special-offer .box p {
+        font-size: 16px;
+        line-height: 23px;
+        width: 60%;
+        margin: 0 auto 34px auto;
+    }
+    #special-offer .box .section-title {
+        margin-bottom: 20px;
+    }
+    #special-offer .button,
+    #special-offer .button2 {
+        width: 145px;
+    }
+    #reviews-rating .wrapper {
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-column-gap: 92px
+    }
+    #reviews-rating .rating {
+        display: flex;
+        flex-direction: column;
+    }
+    #reviews-rating .reviews {
+        margin-top: 0;
+    }
+
+    /*hub-excursion styles end*/
 }
 @media (min-width: 1024px) and (max-width: 1200px){
     .call-me-box {
