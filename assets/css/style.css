@@ -183,20 +183,20 @@ header .right-pc {
 #home .home-box {
     padding-right: 60px;
 }
-#home .home-box h1 {
+#home .home-box .title {
     font-size: 30px;
     line-height: 35px;
     color: #ffffff;
     font-weight: 700;
 }
-#home .home-box h1 span {
+#home .home-box .title span {
     color: #f34747;
     display: block;
 }
 #home .home-box p {
     font-size: 16px;
     color: #ffffff;
-    line-height: 24px;
+    line-height: 25px;
     margin: 28px 0 34px 0;
 }
 #home .home-box .button {
