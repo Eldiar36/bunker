@@ -245,13 +245,40 @@
     .main-banner .container {
         padding: 0;
     }
-    #visiting {
-        background: url("../images/why-pc.png")no-repeat center;
+    .main-banner {
         height: 160px;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-banner .content {
+        position: relative;
+        z-index: 100;
+    }
+    .mouse-parallax-bg,
+    .mouse-parallax-bg-two ,
+    .mouse-parallax-bg-three {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url("../images/why-pc.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 120%;
+        height: 220px;
+        transition: all 0.1s ease;
+    }
+    #visiting {
+        background: none;
+        height: 160px;
+        position: relative;
         background-size: cover;
     }
-    #by-the-way {
-        background: url("../images/by-the-way-pc.png")no-repeat;
+
+    #by-the-way.mouse-parallax-bg-three {
+        background-image: url("../images/by-the-way-pc.png");
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
     #popular .container {
@@ -286,6 +313,9 @@
     #faq .faq-box .question {
         margin-bottom: 2px;
     }
+    #guides {
+        padding: 100px 0 35px 0;
+    }
     #guides .guide-wrap{
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -298,11 +328,56 @@
         padding: 96px 16px 20px 16px;
         margin: 0;
     }
-    #guides .tabs__content img {
+    #guides .left .title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    #guides .left:before {
+        height: 115%;
+        background-size: cover;
+    }
+    #guides .tabs__content{
         height: 300px;
+    }
+    #guides .tabs__content img {
+        height: 100%;
+        width: 395px;
     }
     #guides .address {
         margin: 0;
+    }
+    #guides .title-box {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    #guides .title-box .section-title {
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #guides .tabs .tabs__caption {
+        display: flex;
+        margin: 0 0 0 115px;
+    }
+    #guides .tabs__content.active {
+        flex-direction: row;
+    }
+    #guides .tabs__content .info {
+        margin: 84px  0 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #guides .tabs__content .info .address-box {
+        margin-right: 0;
+    }
+    #guides .tabs__content .info .title {
+        margin-bottom: 20px;
+    }
+    #guides .tabs__content .info p {
+        font-size: 16px;
+        line-height: 23px;
     }
     #special-offer {
         padding: 37px 0 30px 0;
@@ -339,8 +414,146 @@
     #reviews-rating .reviews {
         margin-top: 0;
     }
+    #reviews-rating .rating .rating-box .section-title {
+        margin-bottom: 5px;
+    }
+    #reviews-rating .rating .rating-box .rating-num {
+        font-size: 102px;
+        line-height: 111px;
+        margin-bottom: 16px;
+    }
+    #reviews-rating .rating-category .progress {
+        height: 15px;
+    }
+    #reviews-rating .progress-bar {
+        height: 15px;
+    }
+    #reviews-rating .section-title {
+        font-size: 20px;
+    }
+    #reviews-rating .reviews .title {
+        margin: 20px 0;
+    }
+    #reviews-rating .reviews .review-header .name {
+        margin: 0 60px 0 85px;
+    }
+        /*hub-excursion styles end*/
+    /*card.html styles start*/
+    #card-home .container {
+        padding: 0 20px;
+    }
+    #card-home .slick-prev,
+    #card-home .slick-next {
+        display: none!important;
+    }
+    #card-home .navigation {
+        display: flex;
+       
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+    }
+    #card-home .card-main-slider .item {
+        background: none;
+        background-size: cover;
+        height: 250px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
-    /*hub-excursion styles end*/
+    .card-main-slider .slick-track {
+        left: -20px;
+    }
+    #card-home .slick-dots {
+        bottom: -25px;
+        width: 100%;
+    }
+    #card-home {
+        padding: 150px 0 45px 0 ;
+    }
+    #card-home .navigation  a{
+        font-size: 14px;
+        color: #6f6e6e;
+        font-weight: 600;
+    }
+    #card .card-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 55px;
+    }
+    #card .card-info .info {
+        order: 1;
+    }
+    #card .excursion-details .details-header {
+        grid-template-columns: 0.6fr 1fr;
+        display: grid;
+        grid-column-gap: 46px;
+    }
+    #card .excursion-details .title {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 23px;
+        width: 70%;
+    }
+    #card .section-title{
+        margin-bottom: 18px;
+    }
+    #card .excursion-details{
+        margin-top: 0;
+    }
+    #card .excursion-details .details .item {
+        grid-template-columns: 0.6fr 1fr;
+        margin-bottom: 7px;
+    }
+    #card .excursion-details .text {
+        margin-bottom: 55px;
+    }
+    #card .excursion-details .text p:first-child {
+        margin-bottom: 18px;
+    }
+    #card .excursion-details .text p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    #card .card-info .price-box .button {
+        width: 250px;
+        height: 45px;
+    }
+    #card .card-info .section-title.mobile {
+        display: none;
+    }
+    #card .card-info .info-header {
+        flex-direction: column;
+        margin-bottom: 33px;
+    }
+    #card .card-info .info-header .rating-img {
+        margin-bottom: 30px;
+    }
+    #card .card-info  .warning-text {
+        display: block;
+        margin-top: 38px;
+    }
+    #card .excursion-details .war-text {
+        width: 58%;
+        margin-left: auto;
+    }
+    #card .card-info  .warning-text span {
+        font-size: 12px;
+        color: #f34747;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    #card .card-info  .warning-text p {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    .card-main-slider  .slick-slider .slick-list {
+        margin: 0 20px;
+    }
+
+    /*card.html styles end*/
 }
 @media (min-width: 1024px) and (max-width: 1200px){
     .call-me-box {

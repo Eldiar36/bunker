@@ -54,6 +54,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 99999;
 }
 header .header-top {
     display: flex;
@@ -345,7 +346,7 @@ header .right-pc {
 }
 .ex-card .card-header:after{
     content: "";
-    background:url("../images/layer2.png")no-repeat;
+    background:url("../images/layer2.png")no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -1208,6 +1209,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     height: 305px;
     z-index: 1;
     width: 100%;
+    border-radius: 10px;
 }
 #guides .left .title {
     font-size: 20px;
@@ -1251,12 +1253,32 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     right: -21px;
     top: 5px;
 }
+#guides .tabs__content .info {
+    margin: 27px 20px 0 20px;
+    display: flex;
+}
+
+#guides .tabs__content .info .address-box {
+    margin-right: 22px;
+}
+#guides .tabs__content .info .title {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#guides .tabs__content .info p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 20px;
+}
 .tabs__content {
     display: none;
     transition: .9s ease-out;
 }
 .tabs__content.active{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 #guides .tabs .tabs__caption li:last-child{
     margin-right: 0;
@@ -1424,3 +1446,182 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     padding: 30px 0 30px 170px;
     transition: all 300ms linear;
 }
+/*hub-excursion styles end*/
+/*card.html styles start*/
+
+#card-home .container {
+    padding: 0;
+}
+#card-home .card-main-slider .item {
+    height: 340px;
+}
+#card-home .slick-dots {
+    bottom: 10px;
+    left: 20px;
+    display: inline-block;
+    width: auto;
+    padding: 0;
+}
+#card-home .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: auto;
+    margin: 0 7px;
+}
+#card-home .slick-dots li button {
+    padding: 10px 0;
+    width: 15px;
+    height: auto;
+}
+#card-home .slick-dots li.slick-active button:before {
+    background: #f34747;
+    opacity: 1;
+}
+#card-home .slick-dots li button:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 2px;
+    content: "";
+    text-align: center;
+    opacity: 1;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#card .card-info .info-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+#card .card-info .section-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 23px;
+}
+#card .card-info .info-header .rating-img img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+#card .card-info .info-header .time {
+    font-size: 16px;
+    color: #f34747;
+    font-weight: 500;
+}
+#card .card-info .price-box .name ,
+#card .card-info .price-box .price {
+    font-size: 14px;
+    font-weight: 700;
+}
+#card .card-info .price-box .price{
+    color: #f34747;
+}
+#card .card-info .price-box .item{
+    margin-bottom: 23px;
+}
+
+#card .card-info .price-box .name{
+    color: #ffffff;
+    margin-right: 12px;
+}
+#card .card-info .price-box .dais-price {
+    margin: 6px 0;
+}
+#card .card-info .price-box .button {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#card .card-info  .warning-text{
+    display: none;
+}
+#card .excursion-details{
+    margin-top: 30px;
+}
+#card .excursion-details .links-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 38px;
+}
+#card .excursion-details .text{
+    margin-bottom: 46px;
+}
+#card .excursion-details .text p {
+    color: #6f6e6e;
+    font-size: 14px;
+    line-height: 20px;
+}
+#card .excursion-details .text p:first-child {
+    margin-bottom: 23px;
+}
+#card .excursion-details .links-box a {
+    border: 1px solid #f34747;
+    border-radius: 30px;
+    padding:  0 4px;
+    font-size: 14px;
+    color: #f34747;
+    font-weight: 500;
+    margin: 3px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .3s ease-in;
+}
+#card .excursion-details .links-box a span {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #6f6e6e;
+    font-size: 8px;
+    padding: 9px 8px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+#card .excursion-details .links-box a:hover{
+    background: #f34747;
+    color: #ffffff;
+}
+#card .excursion-details .title {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+#card .excursion-details .details .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 49px;
+    margin-bottom: 11px;
+}
+#card .excursion-details .details .item:last-child{
+    margin-bottom: 3px;
+}
+#card .excursion-details .details .item .option {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+#card .excursion-details .details .item p {
+    color: #f34747;
+    font-weight: 500;
+    font-size: 14px;
+}
+#card .excursion-details .war-text{
+    width: 44%;
+    margin-left: auto;
+}
+
+#card .excursion-details .war-text p {
+    color: #6f6e6e;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+/*card.html styles end*/
