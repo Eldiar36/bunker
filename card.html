@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 </head>
-<body>
+<body class="card-page">
 <header class="header">
     <div class="container">
         <div class="header-top">
@@ -32,9 +32,15 @@
                 Подарочные сертификаты
             </a>
             <a href="#" class="logo">
-                <img src="assets/images/logo.png" alt="">
+                <img src="assets/images/logo.png" class="pc" alt="">
+                <img src="assets/images/back.png" class="mobile" alt="">
             </a>
             <div class="right">
+                <a href="#" class="share">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 60 60">
+                        <image id="share-fill" width="60" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAErElEQVRogdWbeYxdUxzHPx1DiksrllhKLZWippEhIkFiGe2zpBG1xJKIiqJqCypiJwRBgqitTREJDQ3JhB4xVJRY21SlxG4sqQwS1deJsefXfF/z3Lnv9r475717z/evyb33/OZ83j3b73vOHbV26lQC1TjgXOB4YBKwBfAX8CXQByyInFsWRwsReFPgBuBq/Z2mRcCsyLmB2jMdhVU7nyLgZeC6DLCm6cCyaqUysXYhJGCr67PAkU2Ws6bfV61UdiAw4AuBSs6yBv0gAfXh0cC3wPYjjHNgKG/4BA+wphmhAB/lK04owHv7ihMK8Gae4nSGAvybpziDoQCv9BTno05PgVqlURqh886/cS0uK7D12dOBOcB+nmL+AcwrG7CtlWcCl2t15FN3Rc79UBZgW+deAlwEjG3wzBrgHSDP0nAJcAslWEvvBcwF+oFrG8CuViq4m/ryzU3+DwdMi5z7kwKBu4GFwKdKCkYnPGP3zgN2t+ZYNzXdBPRkGLl/AmabQRA5V61dbHeT7tHb6kl55l0BvgD80+CZV4EDgMPkeOyv/m9v8XPdfzFy7vd4wXYAWys6WaDdKc8tBu4A3sgY919gaeTc0mYqkwbcKa9oXzW5dcD7wDcZY28OnA1cqb6apL+BZ/RGfS0uUpUEvDNwDXAmsE3CfQN+CLgfGNZkNPDMAi7V6JukQWA+cI8GrLYpDmyT/SPAVikVsEHkTg0o1lQ/1HWbNy8DLgC2bFD2F+ABuQ8/txO0pnrg2apMVk1QfzsfmAKclWKs9ettztfbLUw1YBs178tRia2Bp1Pur1T/XCjPuHB1at36qOc5+XWBOo2mpZEBnwrs4aFCBva8+vd7ZYKslwGf6CnW9cBtnmK1TNaMD/EUfFIJ+YbJgHfxFGsnj/VqmULbWxqxOjyudFYXyJFZBrzcU6xVbajviGXAz3mKdav2Yw8ukGejqgF/7SGWOYwnKZ81S+VYXSuVOuTmzUxJtvPoCOAlYIWyrtKYhbVRuk8mWrOqKsNaILchrsnAU8AXwMU6h1Go6qclS9nOANZmrJBBHK4EfgawpzKidQnPjlf+bHu8NwLbFQUdn4ct89lH8GsalPkKuEpvb0Xd9e/lboyTAzmQUHZbmXD9+gHGe2TJpLQTAJvIHOtSH/zV9mZ0LCiL2mLxRM55A/alVpl461VG4Hr5smnRlHeo3JYu+W/mpnwMvGk/YOTc0LBCBR1q6Rb4dHWdJJkRfzfwpKbOetkPdq9AG+lHba88HDm3wYQoKnmw5expwEQ5oEnup917TC7pHNlJCOKVjcCadtQ2Tm+1UtkwHZbl2FKrN9NsnXGc7S+VJT0c0HHCXYErNMXFNSYnLOoCFr+0B9NasSFu3WZCWQ0AG6Se0DpgmqcU1raLzim742Gja69O0PrQlFAsnsme4nSFAjzGU5yxoQAnzdN5NBQK8Gee4qwKBXiJpzhvhQLcq0MqI9XjoQAP5TiuFNeiyLnlIe08zJUxmEff6RhGUFsttgg5BXityXIGe0zt26XQ9pYGdRrv9gYuaVy2MXBQ5Jzl1usV8qd4dhTR3NKj7WsVeWi2Bv8EeNvOk0TOffC/EsB/xeoHnoXTEI4AAAAASUVORK5CYII="/>
+                    </svg>
+                </a>
                 <div class="burger-menu" id="burger-menu">
                     <div class="burger-menu_button">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5"
@@ -118,6 +124,7 @@
 
             </div>
             <div class="right-pc">
+
                 <a href="#" class="number">
                     +7 (499) 375-21-25
                 </a>
@@ -208,7 +215,7 @@
                                <div class="price">900 руб.</div>
                            </div>
                        </div>
-                       <a href="#" class="button">Забронировать экскурсию</a>
+                       <a href="#booking-room" class="button booking-popup">Забронировать экскурсию</a>
                        <div class="warning-text">
                            <span> обращаем внимание</span>
                            <p>
@@ -332,6 +339,7 @@
                     </div>
                 </div>
             </div>
+            <a href="#booking-room" class="button booking-popup">Забронировать экскурсию</a>
         </div>
     </section>
     <section id="reviews-rating">
@@ -384,7 +392,14 @@
                             <p>Инновационность </p>
                         </div>
                     </div>
+                    <p class="description pc">
+                        Рейтинг составлен на основе письменного опроса экскурсантов после проведения экскурсии. Всего проголосовали:14 000 чел. Данные обновлялись: 25-01-2021
+                    </p>
+                    <a href="#booking-room" class="button booking-popup">Забронировать Экскурсию</a>
                 </div>
+                <p class="description mobile">
+                    Рейтинг составлен на основе письменного опроса экскурсантов после проведения экскурсии. Всего проголосовали:14 000 чел. Данные обновлялись: 25-01-2021
+                </p>
                 <div class="reviews">
                     <div class="section-title-wrap">
                         <div class="section-title">
@@ -433,6 +448,90 @@
                             территорию прослеживалась вся серьезность объекта. Мы были 29 декабря 2020
                         </p>
                         <a href="#" class="link">Подробнее</a>
+                    </div>
+                    <a href="#review-popup" class="button2 booking-popup">Добавить отзыв</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular" class="any-excursion">
+
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Другие экскурсии
+                </h2>
+                <a href="#">Смотреть все</a>
+            </div>
+            <div class="popular-slider">
+                <div class="ex-card">
+                    <div class="card-header">
+                        <div class="title">Бункер 42</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="time">1ч 10м</div>
+                            <div class="price">1100 руб. (700 руб.)</div>
+                        </div>
+                        <p class="description">
+                            Самая базовая экскурсия для тех,
+                            кто вообще не знает,
+                            что за бункер и зачем он нужен
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ex-card">
+                    <div class="card-header">
+                        <div class="title">Карибский кризис</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="time">1ч 10м</div>
+                            <div class="price">750 руб. (550 руб.)</div>
+                        </div>
+                        <p class="description">
+                            Подробный экскурс в тонкости <br> Холодной войны и гонку <br> вооружений.
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ex-card meetings"
+                >
+                    <div class="card-header">
+                        <div class="title">Спецобъект на Таганке
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="time">1ч 10м</div>
+                            <div class="price">1100 руб. (700 руб.)</div>
+                        </div>
+                        <p class="description">
+                            Самая базовая экскурсия для тех, кто вообще не знает, что за бункер и зачем он нужен
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -651,6 +750,61 @@
         </div>
 
     </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <div class="after"></div>
+</div>
+<div id="review-popup" class="   white-popup-block mfp-hide">
+    <div class="section-title">Оставьте свой отзыв на экскурсию в Бункере-42</div>
+    <div class="popup-body">
+       <div class="left-col">
+           <form action="">
+               <input type="text" class="name" placeholder="Ваше имя">
+           </form>
+           <div class="title">Уточните детали вашего визита</div>
+           <div class="details">
+               <div class="select">
+                   <input class="select__input" type="hidden" name="" value="Мячково">
+                   <div class="select__head">Спецобъект на таганке 16+
+
+                   </div>
+                   <ul class="select__list" style="display: none;">
+                       <li class="select__item">Спецобъект на таганке 16+
+                       </li>
+                       <li class="select__item">Спецобъект на таганке 16+ 2</li>
+                   </ul>
+               </div>
+               <div class="time-date">
+                   <div class="date-box">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=" #f34747"
+                            class="bi bi-calendar3" viewBox="0 0 16 16">
+                           <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                           <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                       </svg>
+                       <input id="datepicker2" name="datepicker" value="01.05.2020" />
+                   </div>
+                   <div class="rating-box">
+                       <div class="rating-img">
+                           <img src="assets/images/star1.png" alt="">
+                           <img src="assets/images/star1.png" alt="">
+                           <img src="assets/images/star1.png" alt="">
+                           <img src="assets/images/star1.png" alt="">
+                           <img src="assets/images/star1.png" alt="">
+                       </div>
+                       <p class="subtitle">Оцените визит нажав
+                           на соостветствующую
+                           звездочку</p>
+                   </div>
+               </div>
+               
+           </div>
+       </div>
+        <div class="contacts">
+            <form action="">
+                <textarea name="review" id="review-form" placeholder="Опишите ваши впечатления" ></textarea>
+            </form>
+        </div>
+    </div>
+    <div class="button">Оставить отзыв</div>
     <button title="Close (Esc)" type="button" class="mfp-close">×</button>
     <div class="after"></div>
 </div>

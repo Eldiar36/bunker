@@ -285,6 +285,26 @@
         padding: 0 20px;
     }
     /*hub-excursion styles start*/
+    #bunker .info{
+        width: 30%;
+        text-align: left;
+        margin-right: 257px;
+        padding: 106px 0 35px 0;
+    }
+    #bunker .bunker-box {
+        display: flex;
+        align-items: center;
+        padding: 25px 61px 25px 61px;
+        background: url("../images/bunker.png")no-repeat center bottom;
+        background-size: cover;
+        height: 300px;
+    }
+    #bunker .info .section-title {
+        margin-bottom: 30px;
+    }
+    #bunker iframe {
+        display: none;
+    }
     #excursion .excursion-box {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -316,10 +336,13 @@
     #guides {
         padding: 100px 0 35px 0;
     }
+    #guides .container {
+        padding: 0 20px;
+    }
     #guides .guide-wrap{
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-column-gap: 80px;
+        grid-column-gap: 92px;
     }
     #guides .left {
         display: flex;
@@ -424,6 +447,7 @@
     }
     #reviews-rating .rating-category .progress {
         height: 15px;
+        width: 182px;
     }
     #reviews-rating .progress-bar {
         height: 15px;
@@ -436,6 +460,20 @@
     }
     #reviews-rating .reviews .review-header .name {
         margin: 0 60px 0 85px;
+    }
+    #reviews-rating .description {
+        font-size: 12px;
+        color: #6f6e6e;
+        line-height: 20px;
+        font-style: italic;
+    }
+    #reviews-rating .button {
+        height: 45px;
+        margin-top: 38px;
+    }
+    #reviews-rating .reviews .button2 {
+        width: 180px;
+        margin-top:61px;
     }
         /*hub-excursion styles end*/
     /*card.html styles start*/
@@ -483,6 +521,9 @@
     }
     #card .card-info .info {
         order: 1;
+    }
+    #card .section-title.pc {
+        display: block;
     }
     #card .excursion-details .details-header {
         grid-template-columns: 0.6fr 1fr;
@@ -552,7 +593,61 @@
     .card-main-slider  .slick-slider .slick-list {
         margin: 0 20px;
     }
-
+    #popular.any-excursion {
+        display: block;
+    }
+    #popular.any-excursion .section-title-wrap {
+        margin-bottom: 25px;
+    }
+    #popular.any-excursion .section-title {
+        margin-bottom: 0;
+    }
+    #review-popup .section-title {
+        display: block;
+    }
+    #review-popup {
+        padding: 48px 50px 46px 50px;
+    }
+    #reviews-rating .rating .button{
+        display: flex;
+    }
+    #reviews-rating .rating .description.pc {
+        display: block;
+        margin-top: 0;
+    }
+    #reviews-rating .description.mobile{
+        display: none;
+    }
+    #guides .button{
+        display: none;
+    }
+    header .logo img.pc {
+        display: block;
+    }
+    header .logo img.mobile {
+       display: none;
+    }
+    #review-popup .contacts form,
+    #review-popup .contacts textarea {
+        height: 100%;
+    }
+    #review-popup .left-col .details .time-date {
+        align-items: baseline;
+        flex-direction: column;
+    }
+    #review-popup .left-col .rating-box {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 35px;
+    }
+    #review-popup .left-col .rating-box .subtitle {
+        margin-right: auto;
+        width: 50%;
+    }
+    #review-popup .button {
+        width: 295px;
+        margin: 25px auto 0 auto;
+    }
     /*card.html styles end*/
 }
 @media (min-width: 1024px) and (max-width: 1200px){
