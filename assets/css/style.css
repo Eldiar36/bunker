@@ -398,9 +398,9 @@ header .right-pc {
     margin-right: 25px;
 }
 .ex-card .card-body .description {
-    font-size: 14px;
+    font-size: 16px;
     color: #a9a9a9;
-    line-height: 20px;
+    line-height: 24px;
     font-weight: 500;
     padding-right: 30px;
     margin: 16px 0;
@@ -1372,9 +1372,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 #faq  .faq-box::-webkit-scrollbar-thumb { height: 50px; background-color: #312f2f; border-radius: 3px;}
 #faq  .faq-box::-webkit-scrollbar-corner { background-color: #999;}
 #faq  .faq-box::-webkit-resizer { background-color: #666;}
-#map {
+.map {
     width: 100%;
     height: 375px;
+}
+.map iframe{
+    width: 100%;
+    height: 375px;
+    border: none;
 }
 #guides {
     padding: 80px 0 35px 0;
@@ -1846,15 +1851,15 @@ header .share{
 #review-popup textarea{
     height: 400px;
 }
-#review-popup input.name,
-#review-popup textarea {
+#review-popup input.name, #review-popup textarea {
     width: 100%;
     border-radius: 10px;
     background: #312f2f;
     border: none;
     padding: 10px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 500;
     font-style: italic;
 }
@@ -1946,8 +1951,9 @@ header .share{
 /*firetag.html styles start*/
 
 #home.firetag {
-    background: url("../images/firetag-bg.png")no-repeat center;
+    background: url("../images/firetag-bg.png")no-repeat bottom;
     background-size: cover;
+
 }
 #home.firetag .title {
     margin-bottom: 27px;
@@ -2012,6 +2018,9 @@ header .share{
 #game-format {
     padding: 20px 0 44px 0;
 }
+#game-format .section-title{
+    margin-bottom: 20px;
+}
 #game-format .ex-card.pvp{
     margin-bottom: 52px;
 }
@@ -2029,22 +2038,22 @@ header .share{
 }
 #game-format .ex-card .card-body .options .item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 34px;
-    margin-bottom: 8px;
+    grid-template-columns: 1.17fr 1fr;
+    grid-column-gap: 17px;
+    margin-bottom: 3px;
 }
 #game-format .ex-card .card-body .options:first-child{
     margin-bottom: 22px;
 }
 #game-format .ex-card .card-body .options .title {
-    font-size: 14px;
+    font-size: 16px;
     color: #Ffffff;
     font-weight: 700;
     margin-bottom: 14px;
 }
 #game-format .ex-card .card-body .options .name ,
 #game-format .ex-card .card-body .options .ans{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 #game-format .ex-card .card-body .options .name{
@@ -2057,16 +2066,16 @@ header .share{
     color: #a9a9a9;
 }
 #game-format .ex-card .card-body .subtitle {
-    font-size: 14px;
+    font-size: 16px;
     color: #a9a9a9;
     font-weight: 500;
     font-style: italic;
     margin-bottom: 33px;
 }
 #game-format .ex-card .card-body .description {
-    font-size: 14px;
+    font-size: 16px;
     color: #a9a9a9;
-    line-height: 20px;
+    line-height: 24px;
     font-weight: 400;
     padding-right: 0;
     margin-bottom: 38px;
