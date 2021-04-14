@@ -1,4 +1,68 @@
+(function() {
+    var cards;
 
+    cards = {
+        init: function() {
+            this._cardsWrapper = document.querySelector('.cards-wrapper');
+            this._bindEvents();
+        },
+        _bindEvents: function() {
+            var cards;
+            cards = document.querySelectorAll('.card');
+            [].forEach.call(cards, this._bindEventsToCard.bind(this));
+        },
+        _bindEventsToCard: function(card) {
+            var self;
+            self = this;
+            card.addEventListener('dragstart', (function(e) {
+                self._handleDragStart.call(self, e, this);
+            }), false);
+            card.addEventListener('drag', self._handleDrag.bind(self), false);
+            card.addEventListener('dragend', self._handleDragEnd.bind(self), false);
+        },
+        _resetCard: function(card) {
+            card.removeAttribute('style');
+            card.classList.remove('card--invisible');
+            this._cardsWrapper.insertBefore(card, this._cardsWrapper.firstChild);
+        },
+        _handleDragStart: function(e, card) {
+            var crt;
+            this._dragStart = e.clientX;
+            crt = card.cloneNode(true);
+            crt.style.display = 'none';
+            e.dataTransfer.setDragImage(crt, 0, 0);
+        },
+        _handleDrag: function(e) {
+            var card, dragDirection, dragDistance, maxDistance, newOpacity;
+            dragDistance = e.clientX - this._dragStart;
+            card = e.target;
+            dragDirection = dragDistance < 0 ? 'left' : 'right';
+            maxDistance = dragDistance < 0 ? -250 : 250;
+            newOpacity = maxDistance / 100 * dragDistance / 1000;
+            if (dragDirection === 'right' && dragDistance < 250 || dragDirection === 'left' && dragDistance > -250) {
+                card.setAttribute('style', 'opacity: ' + 1 - newOpacity + '; transform: rotate(' + dragDistance / 50 + 'deg) translateX(' + dragDistance + 'px);');
+            }
+        },
+        _handleDragEnd: function(e) {
+            var card, dragDirection, dragDistance, self;
+            self = this;
+            dragDistance = e.clientX - this._dragStart;
+            card = e.target;
+            dragDirection = dragDistance < 0 ? 'left' : 'right';
+            if (dragDirection === 'right' && dragDistance > 150 || dragDirection === 'left' && dragDistance < -150) {
+                card.classList.add('card--invisible');
+                setTimeout((function() {
+                    self._resetCard(card);
+                }), 200);
+            } else {
+                card.setAttribute('style', 'transform: rotate(0deg) translateX(0px);');
+            }
+        }
+    };
+
+    cards.init();
+
+}).call(this);
 $('.popular-slider').slick({
     infinite: false,
     dots: false,
@@ -51,34 +115,13 @@ $('.card-main-slider').slick({
 
 //card-main-slider
 
-let bg = document.querySelector('.mouse-parallax-bg');
-window.addEventListener('mousemove', function(e) {
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;
-    bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});
-let bgtwo = document.querySelector('.mouse-parallax-bg-two');
-window.addEventListener('mousemove', function(e) {
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;
-    bgtwo.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});
-let bgthree = document.querySelector('.mouse-parallax-bg-three');
-window.addEventListener('mousemove', function(e) {
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;
-    bgthree.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});
 let hamburger = document.querySelector('.burger-menu_button');
 let menu = document.querySelector('.burger-menu');
-
 const toggleMenu = () => {
     menu.classList.toggle('burger-menu_active');
 }
-
 hamburger.addEventListener('click', e => {
     e.stopPropagation();
-
     toggleMenu();
 });
 
@@ -115,31 +158,7 @@ window.onscroll = function showHeader() {
         });
     });
 })(jQuery);
-$(function() {
-    if($('#box_swiper_1618085503 .swiper-slide').length > 0) {
-        var box_slider_1618085503 = new Swiper('#box_swiper_1618085503', {
-            loop: true,
-            speed: 800,
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: false,
-            slidesPerView: 0,
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 1,
-                depth: 10,
-                modifier: 1,
-                slideShadows: false,
-            },
 
-            pagination: {
-                clickable: true,
-                el: '.pagination',
-                type: 'button',
-            },
-        });
-    }
-});
 
 jQuery(($) => {
     $('.select').on('click', '.select__head', function () {
@@ -206,6 +225,34 @@ jQuery(document).ready(function ($) {
 
     });
 });
+$('.callback-popup').click(function() {
+    $('.callback-form').show();
+    $('.callback-form').css('display', 'block');
+    $('body').css('overflow', 'hidden');
+
+});
+
+// close modal
+$('.callback-form').click(function() {
+    $(document).on('click', function(event) {
+        var select = $('.callback-form');
+        if ($(event.target).closest(select).length)
+            return;
+        $('body').css('overflow', 'visible');
+        $(' .callback-form').hide();
+
+        $(document).unbind('click');
+        event.stopPropagation();
+    });
+});
+$('.call-you').click(function() {
+    $(document).on('click', function(event) {
+        $(' .callback-form').hide();
+        $('body').css('overflow', 'visible');
+        $(document).unbind('click');
+        event.stopPropagation();
+    });
+});
 new universalParallax().init({
     speed: 8.0
 });
@@ -228,7 +275,7 @@ $('.mobile-menu li').on('click', function() {
     $(this).addClass('active')
         .siblings().removeClass('active');
 })
-const elem = document.getElementById ('datepicker');
+const elem = document.getElementsby ('datepicker');
 const datepicker = new Datepicker (elem, {
     autohide: true,
     disableTouchKeyboard:true,
@@ -240,10 +287,23 @@ const datepicker = new Datepicker (elem, {
     weekStart: 1,
 });
 
-jQuery(function($){
-    $(".slot_container").viewportChecker({
-        callbackFunction:function(){
-            $(".slot_container").addClass('active')
-        }
-    });
+
+let bg = document.querySelector('.mouse-parallax-bg');
+window.addEventListener('mousemove', function(e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 });
+let bgtwo = document.querySelector('.mouse-parallax-bg-two');
+window.addEventListener('mousemove', function(e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    bgtwo.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+let bgthree = document.querySelector('.mouse-parallax-bg-three');
+window.addEventListener('mousemove', function(e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    bgthree.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+

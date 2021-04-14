@@ -233,6 +233,8 @@ header .right-pc {
     color: #ffffff;
     transition: .2s;
     font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 .button2 {
     border-radius: 10px;
@@ -243,6 +245,7 @@ header .right-pc {
     text-transform: uppercase;
     font-weight: 500;
     display: flex;
+
     align-items: center;
     letter-spacing: 1px;
     justify-content: center;
@@ -396,7 +399,7 @@ header .right-pc {
 }
 .ex-card .card-body .description {
     font-size: 14px;
-    color: #6f6e6e;
+    color: #a9a9a9;
     line-height: 20px;
     font-weight: 500;
     padding-right: 30px;
@@ -506,7 +509,7 @@ footer {
     height: 24px;
 }
 .footer-top .logo-box  .scrool-top {
-    color: #6f6e6e;
+    color: #a9a9a9;
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -553,7 +556,7 @@ footer {
 }
 .copyright .text p,
 .copyright .text span {
-    color: #6f6e6e;
+    color: #a9a9a9;
     font-size: 12px;
 }
 .copyright .text p {
@@ -619,7 +622,7 @@ footer {
     width: 100%;
     height: 32px;
     max-width: 100%;
-    border-bottom: 2px solid #5a5959;
+    border-bottom: 2px solid #a9a9a9;;
     background: none;
     padding: 0 20px 10px 0;
     display: flex;
@@ -715,7 +718,7 @@ footer {
     border-right: none;
     border-top: none;
     border-left: none;
-    border-bottom: 2px solid #5a5959;
+    border-bottom: 2px solid #a9a9a9;
     background: none;
     color: #ffffff;
     font-size: 13px;
@@ -860,7 +863,7 @@ footer {
     font-size: 13px;
     font-weight: 500;
     font-style: italic;
-    color: #6f6e6e;
+    color: #a9a9a9;
     margin-top: 14px;
 }
 .white-popup-block .contacts .contacts_input{
@@ -877,7 +880,7 @@ footer {
     margin-bottom: 15px;
 }
 .white-popup-block .contacts .contacts_input::placeholder{
-    color: #6f6e6e;
+    color: #a9a9a9;
 }
 
 .white-popup-block .details {
@@ -947,7 +950,7 @@ footer {
     background-color: rgb(28, 28, 28);
 }
 .datepicker-cell.prev:not(.disabled), .datepicker-cell.next:not(.disabled) {
-    color: #7a7a7a;
+    color: #a9a9a9;
     opacity: 0;
 }
 .datepicker .datepicker-cell {
@@ -984,15 +987,23 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .callback-popup {
     position: relative;
 }
-#callback-form {
+.callback-form {
+    display: none;
+}
+.callback-form {
     padding: 25px 22px 22px 22px;
     border-radius: 0 0 10px 10px;
-    width: 375px;
+    width: 254px;
+    position: absolute;
+    border: none;
     background-color: rgb(28, 28, 28);
     opacity: 0.949;
     z-index: 123;
-    display: block;
     transition: .8s ease-in;
+    top: 114px;
+}
+.callback-form.is-open {
+    display: block;
 }
 .datepicker-grid {
     width: 100%;
@@ -1000,42 +1011,42 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .call-me {
     position: relative;
 }
-#callback-form .section-title {
+.callback-form .section-title {
     font-size: 16px;
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 14px;
     text-align: center;
 }
-#callback-form button.mfp-close {
+.callback-form button.mfp-close {
     display: none;
 }
-#callback-form form{
+.callback-form form{
     width: 100%;
 }
-#callback-form form input {
+.callback-form form input {
     border: none;
     width: 100%;
     border-radius: 10px;
     background-color: rgb(49, 47, 47);
     height: 45px;
     font-size: 16px;
-    color: #6f6e6e;
+    color: #a9a9a9;
     font-weight: 500;
-    padding: 20px;
+    padding: 5px 20px ;
     text-align: center;
     margin-bottom: 10px;
 }
-#callback-form form button {
+.callback-form form .button {
     width: 100%;
     border: none;
     border-radius: 10px;
     font-size: 12px;
     font-weight: 500;
-    height: 40px;
+    height: 45px;
     text-transform: uppercase;
 }
-#callback-form form a {
+.callback-form form .call-you{
     color: #f34747;
     font-size: 12px;
     font-weight: 500;
@@ -1081,6 +1092,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     padding: 40px 35px 60px 35px;
     background: url("../images/bunker.png")no-repeat center bottom;
     background-size: cover;
+    border-radius: 10px;
 }
 #bunker .info {
     width: 100%;
@@ -1099,6 +1111,137 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 16px;
     line-height: 23px;
     color: #ffffff;
+}
+#bunker .bunker-box {
+    display: flex;
+
+    align-items: center;
+    padding: 40px 35px 60px 35px;
+    background: url(../images/bunker.png)no-repeat center bottom;
+    background-size: cover;
+    border-radius: 10px;
+}
+#bunker .inner {
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+
+#bunker .cards-wrapper {
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+#bunker .cards-wrapper .card.card-box {
+    width: 165px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    transition: all 200ms;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    border: none;
+    z-index: 1000;
+}
+#bunker .cards-wrapper .card.card-box .box {
+    position: relative;
+    background: #312f2f;
+    width: 165px;
+    height: 250px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    padding: 115px 14px 14px 14px;
+}
+#bunker .cards-wrapper .card.card-box .box p {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 19px;
+}
+#bunker .cards-wrapper .card.card-box .box p span {
+    font-weight: 800;
+    font-style: italic;
+    color: #f34747;
+    position: relative;
+    z-index: 10;
+}
+#bunker .cards-wrapper .card.card-box .box .num {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 22px;
+    height: 37px;
+    background: url("../images/shape_num.png")no-repeat;
+    background-size: contain;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 700;
+}
+#bunker .cards-wrapper .card.card-box .box:after{
+    content: "";
+    border: none;
+    border-radius: 10px;
+    background: url("../images/rec1.png")no-repeat no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 100%;
+
+}
+
+
+#bunker .cards-wrapper .card.card-box:nth-child(1) {
+    top: 0;
+    right: 0;
+}
+#bunker .cards-wrapper .card.card-box:nth-child(2) {
+    top: 0;
+    right: 15px;
+}
+#bunker .cards-wrapper .card.card-box:nth-child(3) {
+    top: 0;
+    right: 30px;
+}
+#bunker .cards-wrapper .card.card-box:nth-child(4) {
+    top: 0;
+    right: 45px;
+}
+#bunker .cards-wrapper .card.card-box:nth-child(5) {
+    top: 0;
+    right: 60px;
+}
+#bunker .cards-wrapper .card.card-box:nth-child(6) {
+    top: 0;
+    right: 75px;
+}
+#bunker .cards-wrapper .card.card-box:nth-child(7) {
+    top: 0;
+    right: 90px;
+}
+#bunker .cards-wrapper .card.card-box:nth-child(8) {
+    top: 0;
+    right: 105px;
+}
+#bunker .cards-wrapper .card.card-box img {
+    width: 100%;
+    -webkit-user-drag: none;
+}
+#bunker .cards-wrapper .card.card-box.card--invisible {
+    transition: all 200ms ease-in;
+    opacity: 0 !important;
+}
+#bunker {
+    position: relative;
 }
 #excursion {
     padding: 55px 0;
@@ -1142,6 +1285,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 #excursion .button.all{
     width: 100%;
     margin-top: 27px;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 #points .slick-prev,
@@ -1181,6 +1326,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background: url("../images/points6.png")no-repeat;
     background-size: cover;
 }
+#points .ex-card .card-header .title {
+    line-height: 20px;
+}
 #points .ex-card .card-body .description {
     padding-right: 0;
     margin: 16px 0 0 0;
@@ -1192,6 +1340,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     padding: 34px 22px 36px 22px;
     background: #312f2f;
     border-radius: 10px;
+    height: 390px;
+    overflow-y: scroll;
 }
 #faq .section-title {
     text-align: center;
@@ -1211,14 +1361,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-bottom: 25px;
 }
 #faq .faq-box .answer {
-    color: #6f6e6e;
+    color: #a9a9a9;
     font-size: 16px;
     line-height: 24px;
 }
-#faq .read-more {
-    font-size: 16px;
-    color: #f34747;
-    text-decoration: underline;
+#faq  .faq-box::-webkit-scrollbar { width: 3px; height: 3px;}
+#faq  .faq-box::-webkit-scrollbar-button {  background-color: #f34747; }
+#faq  .faq-box::-webkit-scrollbar-track {  background-color: #f34747;}
+#faq  .faq-box::-webkit-scrollbar-track-piece { background-color: #f34747;}
+#faq  .faq-box::-webkit-scrollbar-thumb { height: 50px; background-color: #312f2f; border-radius: 3px;}
+#faq  .faq-box::-webkit-scrollbar-corner { background-color: #999;}
+#faq  .faq-box::-webkit-resizer { background-color: #666;}
+#map {
+    width: 100%;
+    height: 375px;
 }
 #guides {
     padding: 80px 0 35px 0;
@@ -1453,7 +1609,7 @@ header .share{
 }
 #reviews-rating .description {
     font-size: 12px;
-    color: #6f6e6e;
+    color: #a9a9a9;
     line-height: 20px;
     font-style: italic;
     margin-top: 27px;
@@ -1470,7 +1626,7 @@ header .share{
 }
 #reviews-rating .reviews .text {
     font-size: 14px;
-    color: #6f6e6e;
+    color: #a9a9a9;
     margin-bottom: 17px;
 }
 #reviews-rating .reviews .link {
@@ -1538,6 +1694,13 @@ header .share{
     justify-content: space-between;
     margin-bottom: 27px;
 }
+#card .card-info .info-header .head {
+    display: flex;
+    align-items: center;
+}
+#card .card-info .info-header .head .top {
+    display: none;
+}
 #card .card-info .section-title {
     font-size: 30px;
     line-height: 36px;
@@ -1592,7 +1755,7 @@ header .share{
     margin-bottom: 46px;
 }
 #card .excursion-details .text p {
-    color: #6f6e6e;
+    color: #a9a9a9;
     font-size: 14px;
     line-height: 20px;
 }
@@ -1613,11 +1776,15 @@ header .share{
     position: relative;
     transition: .3s ease-in;
 }
-#card .excursion-details .links-box a span {
+#card .excursion-details .links-box a:hover div {
+    display: block;
+}
+#card .excursion-details .links-box a div {
     display: none;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -100px;
+    min-width: 100px;
+    top: -45px;
     background: #6f6e6e;
     font-size: 8px;
     padding: 9px 8px;
@@ -1660,7 +1827,7 @@ header .share{
 }
 
 #card .excursion-details .war-text p {
-    color: #6f6e6e;
+    color: #a9a9a9;
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
@@ -1726,7 +1893,7 @@ header .share{
 }
 #review-popup .left-col .rating-box .subtitle {
     font-size: 13px;
-    color: #6f6e6e;
+    color: #a9a9a9;
     line-height: 16px;
     font-weight: 500;
     font-style: italic;
@@ -1776,5 +1943,233 @@ header .share{
     width: 280px;
     height: 250px;
 }*/
+/*firetag.html styles start*/
 
+#home.firetag {
+    background: url("../images/firetag-bg.png")no-repeat center;
+    background-size: cover;
+}
+#home.firetag .title {
+    margin-bottom: 27px;
+}
+#home.firetag .button {
+    width: 175px;
+}
+#firetag {
+    padding: 30px 0 56px 0;
+}
+#firetag .section-title {
+    color: #f34747;
+    margin-bottom: 25px;
+}
+#firetag .description p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #Ffffff;
+}
+#firetag .description p:first-child {
+    margin-bottom: 25px;
+}
+#firetag .description p span {
+    font-weight: 700;
+}
+#firetag .info{
+    margin-bottom: 40px;
+}
+#firetag .gif{
+    background: #322F30;
+    border-radius: 10px;
+}
+#popular.equipment .section-title{
+    margin-bottom: 20px;
+}
+.equipment .ex-card .card-header{
+    height: 140px;
+}
+.equipment .ex-card .card-header .title {
+    line-height: 20px;
+}
+.equipment .ex-card .card-header.gun{
+    background: url("../images/gun.png")no-repeat;
+    background-size: cover;
+}
+#second-banner {
+    padding: 255px 0 28px 0;
+    background: url("../images/firetag-bg2.png")no-repeat;
+    background-size: cover;
+}
+#second-banner .box .section-title {
+    margin-bottom: 22px;
+}
+#second-banner .box p {
+    font-size: 16px;
+    color: #Ffffff;
+    line-height: 24px;
+}
+#second-banner .box p:first-child {
+    margin-bottom: 25px;
+}
+#game-format {
+    padding: 20px 0 44px 0;
+}
+#game-format .ex-card.pvp{
+    margin-bottom: 52px;
+}
+#game-format .ex-card .card-header {
+    margin-bottom: 22px;
+    height: 140px;
+}
+#game-format .ex-card .card-header.pvp {
+    background: url("../images/pvp.png")no-repeat;
+    background-size: cover;
+}
+#game-format .ex-card .card-header.pve {
+    background: url("../images/pve.png")no-repeat;
+    background-size: cover;
+}
+#game-format .ex-card .card-body .options .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 34px;
+    margin-bottom: 8px;
+}
+#game-format .ex-card .card-body .options:first-child{
+    margin-bottom: 22px;
+}
+#game-format .ex-card .card-body .options .title {
+    font-size: 14px;
+    color: #Ffffff;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+#game-format .ex-card .card-body .options .name ,
+#game-format .ex-card .card-body .options .ans{
+    font-size: 14px;
+    font-weight: 500;
+}
+#game-format .ex-card .card-body .options .name{
+    color: #Ffffff;
+}
+#game-format .ex-card .card-body .options .ans {
+    color: #f34747;
+}
+#game-format .ex-card .card-body .options .ans span{
+    color: #a9a9a9;
+}
+#game-format .ex-card .card-body .subtitle {
+    font-size: 14px;
+    color: #a9a9a9;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 33px;
+}
+#game-format .ex-card .card-body .description {
+    font-size: 14px;
+    color: #a9a9a9;
+    line-height: 20px;
+    font-weight: 400;
+    padding-right: 0;
+    margin-bottom: 38px;
+}
+#game-format .button {
+    width: 175px;
 
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#team-building .box {
+    padding: 36px 22px 28px 22px;
+    border-radius: 10px;
+    background: url("../images/corporate.png")no-repeat center;
+    background-size: cover;
+}
+#team-building .box h2 {
+    margin-bottom: 225px;
+}
+#team-building .box p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+#team-building .box .button{
+    width: 227px;
+}
+.partners .title {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.partners {
+    padding: 0 20px;
+}
+#guides .address .section-title {
+    font-size: 20px;
+}
+.partners-box .first-col,
+.partners-box .second-col,
+.partners-box .third-col,
+.partners-box .four-col{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+.partners-box  svg{
+    margin: 0 8px;
+
+}
+.partners-box .second-col {
+    align-items: center;
+    margin-top: -40px;
+}
+.partners-box .second-col .second{
+    width: 60%;
+}
+.partners-box .second-col .second svg:first-child{
+    margin-bottom: 10px;
+}
+#booking-room.firetag .price {
+    margin: 25px auto 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+#booking-room.firetag .btn-group {
+    margin-top: 40px;
+}
+#booking-room.firetag  .details {
+    padding: 28px 22px 31px 22px;
+}
+#booking-room.firetag .people .people-box {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 26px;
+}
+/*firetag.html styles end*/
+
+#board {
+    padding: 400px 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(245, 247, 250);
+}
+
+/*.card {
+    width: 165px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 1%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: #4f4e4e;
+    transform: translateX(-50%) translateY(-50%) scale(0.95);
+}
+.card img {
+    width: 400px;
+    height: 400px;
+}*/

@@ -116,11 +116,25 @@
                         </div>
                     </nav>
                 </div>
-                <a href="#" class="call">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg>
-                </a>
+                <div class="call-me-box-mobile">
+                    <a href="#" class="call callback-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                    </a>
+                    <div  class=" callback-form   ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <div class="right-pc">
@@ -146,11 +160,21 @@
                     <li><a href="#"> контакты</a></li>
                 </ul>
                 <div class="call-me-box">
-                    <a href="#callback" data-toggle="modal" class="call-me callback-popup">
-
+                    <a href="#callback-form" id="but1" data-toggle="modal" class="call-me callback-popup">
                         Обратный звонок
                     </a>
-
+                    <div  class=" callback-form ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,12 +209,17 @@
            <div class="card-info">
                <div class="info">
                   <div class="info-header">
-                      <div class="rating-img">
-                          <img src="assets/images/star-fill.png" alt="">
-                          <img src="assets/images/star-fill.png" alt="">
-                          <img src="assets/images/star-fill.png" alt="">
-                          <img src="assets/images/star-fill.png" alt="">
-                          <img src="assets/images/star-half.png" alt="">
+                      <div class="head">
+                          <div class="rating-img">
+                              <img src="assets/images/star-fill.png" alt="">
+                              <img src="assets/images/star-fill.png" alt="">
+                              <img src="assets/images/star-fill.png" alt="">
+                              <img src="assets/images/star-fill.png" alt="">
+                              <img src="assets/images/star-half.png" alt="">
+                          </div>
+                          <div class="top">
+                              <img src="assets/images/top.png" alt="">
+                          </div>
                       </div>
                       <div class="time">
                           1ч 10м
@@ -247,13 +276,15 @@
                            <a href="#">КПП №2</a>
                            <a href="#">Кинозал</a>
                            <a href="#">ЦБУ
-                               <span>Центральное <br> боевое управление</span>
+                               <div>Центральное <br> боевое управление</div>
                            </a>
                            <a href="#">Двор</a>
                            <a href="#">Спуск по лестнице</a>
                            <a href="#">КПП №2</a>
                            <a href="#">Кинозал</a>
-                           <a href="#">ЦБУ</a>
+                           <a href="#">ЦБУ
+                               <div>Центральное <br> боевое управление</div>
+                           </a>
                        </div>
                    </div>
                    <div class="details">
@@ -355,6 +386,7 @@
                             <img src="assets/images/star-fill.png" alt="">
                             <img src="assets/images/star-fill.png" alt="">
                             <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
                             <img src="assets/images/star-half.png" alt="">
                         </div>
                     </div>
@@ -413,6 +445,7 @@
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-half.png" alt="">
                             </div>
                             <div class="name">Владимир     </div>
@@ -431,6 +464,7 @@
                     <div class="review-box">
                         <div class="review-header">
                             <div class="rating-img">
+                                <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">

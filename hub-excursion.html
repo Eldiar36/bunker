@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
           integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
           crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 </head>
-<body>
+<body class="e-view ej2-new" aria-busy="true">
 <header class="header">
     <div class="container">
         <div class="header-top">
@@ -110,12 +110,26 @@
                         </div>
                     </nav>
                 </div>
-                <a href="#" class="call">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg>
-                </a>
 
+                <div class="call-me-box-mobile">
+                    <a href="#" class="call callback-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                    </a>
+                    <div  class=" callback-form   ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="right-pc">
                 <a href="#" class="number">
@@ -139,11 +153,21 @@
                     <li><a href="#"> контакты</a></li>
                 </ul>
                 <div class="call-me-box">
-                    <a href="#callback" data-toggle="modal" class="call-me callback-popup">
-
+                    <a href="#callback-form" id="but1" data-toggle="modal" class="call-me callback-popup">
                         Обратный звонок
                     </a>
-
+                    <div  class=" callback-form ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -256,6 +280,7 @@
             <a href="#" class="button all">Все экскурсии</a>
         </div>
     </section>
+
     <section id="bunker">
         <div class="container">
             <div class="bunker-box">
@@ -265,35 +290,91 @@
                     </h2>
                     <p>Пролистайте несколько коротких фактов о Бункере, которые убедят вас посетить его.</p>
                 </div>
-             <!--   <div dir="ltr" class="wrapper swiper-container swiper_narrow swiper-container-3d" id="box_swiper_1618085503">
-                    <div class="swiper-wrapper">
-                        <div class="announce_box article swiper-slide">
-                            1
+                <div class="inner">
+                    <div class="cards-wrapper">
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    8
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="announce_box article swiper-slide">
-                            2
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    7
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="announce_box article swiper-slide">
-                            3
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    6
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="announce_box article swiper-slide">
-                            4
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    5
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="announce_box article swiper-slide">
-                            5
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    4
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="announce_box article swiper-slide">
-                            6
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    3
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="announce_box article swiper-slide">
-                            7
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    2
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="announce_box article swiper-slide">
-                            8
+                        <div class="card card-box" draggable="true">
+                            <div class="box">
+                                <div class="num">
+                                    1
+                                </div>
+                                <p>
+                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="pagination"></div>
-                </div>-->
+                </div>
+
             </div>
             <iframe src="https://www.youtube.com/embed/hi4l-UVhISk"
                     title="YouTube video player" frameborder="0"
@@ -407,10 +488,11 @@
                         посещению.
                     </div>
                 </div>
-                <a href="#" class="read-more">Читать далее</a>
+
             </div>
         </div>
     </section>
+
     <section id="guides">
         <div class="container">
             <div class="guide-wrap">
@@ -446,19 +528,33 @@
                             </div>
                             <div class="info">
                                 <div class="address-box">
-                                    <div class="title">Адрес </div>
+                                    <div class="title">Адрес</div>
                                     <p>
                                         Москва, <br> 5-й Котельнический пер., <br> 11 (ст.м. Таганская)
                                     </p>
                                 </div>
                                 <div class="work-time">
                                     <div class="title">Часы работы</div>
-                                    <p>ПН-ВС  10:00–20:00</p>
+                                    <p>ПН-ВС 10:00–20:00</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tabs__content">
-                            <img src="assets/images/map.png" alt="">
+                            <div class="map">
+                                <img src="assets/images/map.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="address-box">
+                                    <div class="title">Адрес</div>
+                                    <p>
+                                        Москва, <br> 5-й Котельнический пер., <br> 11 (ст.м. Таганская)
+                                    </p>
+                                </div>
+                                <div class="work-time">
+                                    <div class="title">Часы работы</div>
+                                    <p>ПН-ВС 10:00–20:00</p>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -494,6 +590,7 @@
                             <img src="assets/images/star-fill.png" alt="">
                             <img src="assets/images/star-fill.png" alt="">
                             <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
                             <img src="assets/images/star-half.png" alt="">
                         </div>
                     </div>
@@ -506,14 +603,14 @@
                             </div>
                             <p>Патриотичность</p>
                         </div>
-                       <div class="item">
-                           <div class="progress">
-                               <div class="progress-bar bg-info first" style="width: 80%; background: #f34747"
-                                    role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                               </div>
-                           </div>
-                           <p>Интересность </p>
-                       </div>
+                        <div class="item">
+                            <div class="progress">
+                                <div class="progress-bar bg-info first" style="width: 80%; background: #f34747"
+                                     role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            <p>Интересность </p>
+                        </div>
                         <div class="item">
                             <div class="progress">
                                 <div class="progress-bar bg-info first" style="width: 75%; background: #f34747"
@@ -533,7 +630,8 @@
                     </div>
                 </div>
                 <p class="description mobile">
-                    Рейтинг составлен на основе письменного опроса экскурсантов после проведения экскурсии. Всего проголосовали:14 000 чел. Данные обновлялись: 25-01-2021
+                    Рейтинг составлен на основе письменного опроса экскурсантов после проведения экскурсии. Всего
+                    проголосовали:14 000 чел. Данные обновлялись: 25-01-2021
                 </p>
                 <div class="reviews">
                     <div class="section-title-wrap">
@@ -548,12 +646,13 @@
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-half.png" alt="">
                             </div>
-                                <div class="name">Владимир     </div>
-                                <div class="date">
-                                    20.02.2021
-                                </div>
+                            <div class="name">Владимир</div>
+                            <div class="date">
+                                20.02.2021
+                            </div>
                         </div>
                         <div class="title">Лучше планировать заранее</div>
                         <p class="text">
@@ -569,9 +668,10 @@
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
                                 <img src="assets/images/star-half.png" alt="">
                             </div>
-                            <div class="name">Владимир     </div>
+                            <div class="name">Владимир</div>
                             <div class="date">
                                 20.02.2021
                             </div>
@@ -588,6 +688,7 @@
             </div>
         </div>
     </section>
+
 
 </main>
 
@@ -652,7 +753,7 @@
                         <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
                         <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                     </svg>
-                    <input id="datepicker" name="datepicker" value="01.05.2020" />
+                    <input id="datepicker" name="datepicker" value="01.05.2020"/>
                 </div>
                 <div class="time-box">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
@@ -839,7 +940,10 @@ callback2
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+        integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+        crossorigin="anonymous"></script>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>
