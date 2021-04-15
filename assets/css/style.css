@@ -987,7 +987,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .callback-popup {
     position: relative;
 }
-.callback-form {
+
+.callback-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
     display: none;
 }
 .callback-form {
@@ -1001,6 +1008,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     z-index: 123;
     transition: .8s ease-in;
     top: 114px;
+    display: block;
+    right: 161px;
 }
 .callback-form.is-open {
     display: block;
@@ -1418,9 +1427,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     z-index: 100;
 }
 #guides .left .description {
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
-    line-height: 20px;
+    line-height: 24px;
     position: relative;
     z-index: 100;
 }
@@ -1466,9 +1475,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-bottom: 10px;
 }
 #guides .tabs__content .info p {
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
-    line-height: 20px;
+    line-height: 23px;
 }
 .tabs__content {
     display: none;
@@ -1524,8 +1533,8 @@ header .share{
     text-decoration: none;
 }
 #special-offer .box p {
-    font-size: 14px;
-    line-height: 20px;
+     font-size: 16px;
+     line-height: 24px;
     color: #ffffff;
     padding: 0 19px;
     margin-bottom: 30px;
@@ -1613,9 +1622,9 @@ header .share{
     font-weight: 500;
 }
 #reviews-rating .description {
-    font-size: 12px;
+    font-size: 16px;
     color: #a9a9a9;
-    line-height: 20px;
+    line-height: 24px;
     font-style: italic;
     margin-top: 27px;
 }
@@ -1630,7 +1639,7 @@ header .share{
     font-weight: 700;
 }
 #reviews-rating .reviews .text {
-    font-size: 14px;
+    font-size: 16px;
     color: #a9a9a9;
     margin-bottom: 17px;
 }
@@ -1761,8 +1770,8 @@ header .share{
 }
 #card .excursion-details .text p {
     color: #a9a9a9;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
 }
 #card .excursion-details .text p:first-child {
     margin-bottom: 23px;
@@ -1833,8 +1842,8 @@ header .share{
 
 #card .excursion-details .war-text p {
     color: #a9a9a9;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 500;
     font-style: italic;
 }
