@@ -187,16 +187,19 @@ jQuery(document).ready(function ($) {
 $(document).ready(function() {
     $(".callback-popup").click(function() {
         $(".callback-container").fadeToggle('fast');
+        $(".callback-form").fadeToggle('fast');
         $('body').css('overflow', 'hidden');
     });
     $(".callback-container").bind("click",function(e){
         if($(e.target).attr("class") != "callback-form")
             $(".callback-container").fadeOut('fast');
+            $(".callback-form").fadeOut('fast');
              $('body').css('overflow', 'visible');
     })
     $(".call-you").bind("click",function(e){
         if($(e.target).attr("class") != "callback-form")
             $(".callback-container").fadeOut('fast');
+            $(".callback-form").fadeOut('fast');
         $('body').css('overflow', 'visible');
     })
 });

@@ -987,7 +987,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .callback-popup {
     position: relative;
 }
-
+.call-me-box {
+    position: relative;
+}
 .callback-container {
     width: 100%;
     height: 100%;
@@ -1007,9 +1009,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     opacity: 0.949;
     z-index: 123;
     transition: .8s ease-in;
-    top: 114px;
-    display: block;
-    right: 161px;
+    top: 57px;
+    display: none;
+    right: -9px;
 }
 .callback-form.is-open {
     display: block;
