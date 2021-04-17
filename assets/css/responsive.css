@@ -285,20 +285,21 @@
         padding: 0 20px;
     }
     /*hub-excursion styles start*/
-    #bunker .info{
-        width: 30%;
+    #bunker .info {
         text-align: left;
-        margin-right: 300px;
         padding: 106px 0 35px 0;
+        margin-bottom: 0;
     }
     #bunker .bunker-box {
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
         padding: 25px 61px 25px 61px;
         background: url("../images/bunker.png")no-repeat center bottom;
         background-size: cover;
+        grid-column-gap: 100px;
         height: 300px;
     }
+
     #bunker .info .section-title {
         margin-bottom: 30px;
     }
@@ -859,7 +860,7 @@
 
     #bunker .bunker-box {
         flex-direction: column;
-        padding: 40px 0 60px 20px;
+        padding: 40px 0 60px 0;
         height: 630px;
     }
     #bunker .slick-prev,
@@ -874,10 +875,13 @@
         width: 100%;
         text-align: center;
         margin-bottom: 36px;
+        padding: 0 20px;
     }
+
     #bunker .cards-wrapper {
         width: 80%;
         margin: 0 auto;
+        padding-left: 20px;
     }
     #bunker .inner {
         width: 100%;
@@ -889,8 +893,9 @@
         font-size: 24px;
     }
     #bunker .cards-wrapper .card.card-box {
-        width: 258px;
+        width: 258px!important;
         background: none;
+        margin-right: 40px;
         height: 390px;
         position: relative;
     }
@@ -910,20 +915,9 @@
         background-image: -ms-linear-gradient( 134deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
         opacity: 0.2;
     }
-    #bunker .cards-wrapper .card.card-box:nth-child(1) ,
-    #bunker .cards-wrapper .card.card-box:nth-child(2) ,
-    #bunker .cards-wrapper .card.card-box:nth-child(3) ,
-    #bunker .cards-wrapper .card.card-box:nth-child(4) ,
-    #bunker .cards-wrapper .card.card-box:nth-child(5) ,
-    #bunker .cards-wrapper .card.card-box:nth-child(6) ,
-    #bunker .cards-wrapper .card.card-box:nth-child(7) ,
-    #bunker .cards-wrapper .card.card-box:nth-child(8) {
-        left: 0;
-    }
     #bunker .slick-track {
         position: relative;
-        flex-direction: row-reverse;
-        display: flex;
+        left: 0px;
     }
     #bunker .cards-wrapper .card.card-box .box p {
         font-size: 24px;
@@ -951,5 +945,11 @@
         color: #ffffff;
         font-weight: 700;
     }
+    .swiper-navigation {
+        display: none;
+    }
+
+
+
 
 }

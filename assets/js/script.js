@@ -1,5 +1,4 @@
 
-
 $('.popular-slider').slick({
     infinite: false,
     dots: false,
@@ -23,29 +22,9 @@ $('.popular-slider').slick({
         },
     ]
 });
-$('.cards-wrapper').slick({
-    infinite: false,
-    dots: false,
-    slidesToShow: 1.15,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 3000,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1023,
-            settings: "slick"
-        },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 1.15,
-            }
-        },
-    ]
-});
+
 //card-main-slider
+
 
 $('.card-main-slider').slick({
     infinite: true,

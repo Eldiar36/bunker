@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
           integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+
+
     <link rel="stylesheet" href="assets/css/datepicker.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -24,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 </head>
-<body class="e-view ej2-new" aria-busy="true">
+<body>
 <header class="header">
     <div class="container">
         <div class="header-top">
@@ -296,90 +299,102 @@
                     </h2>
                     <p>Пролистайте несколько коротких фактов о Бункере, которые убедят вас посетить его.</p>
                 </div>
-                <div class="inner">
-                    <div class="cards-wrapper">
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    8
-                                </div>
-                                <p>
-                                    В следствие ЧП бункер был готов к <span>1 месяцу автономной работы</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    7
-                                </div>
-                                <p>
-                                    В следствие ЧП бункер был готов к <span>1 месяцу автономной работы</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    6
-                                </div>
-                                <p>
-                                    Его работоспо- собность обеспечивало <br> <span>4 смены  по 600 человек</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    5
-                                </div>
-                                <p>
-                                    Общая площадь тоннелей и помещений составляет <br> <span>7 000 м2</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    4
-                                </div>
-                                <p>
-                                    Здесь находился командный пункт во время <br> <span>Карибского  кризиса</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    3
-                                </div>
-                                <p>
-                                    Его строительство завершилось <br> <span> в 1956 году</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    2
-                                </div>
-                                <p>
-                                    Комплекс находится  на глубине <br> <span>65 м под землей</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card card-box" draggable="true">
-                            <div class="box">
-                                <div class="num">
-                                    1
-                                </div>
-                                <p>
-                                    Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                   <div class="swiper-container card-slider ">
+                       <div class="swiper-wrapper cards-wrapper ">
+                           <div class= "swiper-slide card card-box   " >
+                               <div class="box">
+                                   <div class="num">
+                                       1
+                                   </div>
+                                   <p>
+                                       Это настоящий военный объект, рассекреченный <span>лишь в 2006 году</span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class= "swiper-slide card card-box   " >
+                               <div class="box">
+                                   <div class="num">
+                                       2
+                                   </div>
+                                   <p>
+                                       Комплекс находится  на глубине <br> <span>65 м под землей</span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class= "swiper-slide card card-box   " >
+                               <div class="box">
+                                   <div class="num">
+                                       3
+                                   </div>
+                                   <p>
+                                       Его строительство завершилось <br> <span> в 1956 году</span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class= "swiper-slide  card   card-box  ">
+                               <div class="box">
+                                   <div class="num">
+                                       4
+                                   </div>
+                                   <p>
+                                       Здесь находился командный пункт во время <br> <span>Карибского  кризиса</span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class= "swiper-slide card    card-box" >
+                               <div class="box">
+                                   <div class="num">
+                                       5
+                                   </div>
+                                   <p>
+                                       Общая площадь тоннелей и помещений составляет <br> <span>7 000 м2</span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class= "swiper-slide card    card-box" >
+                               <div class="box">
+                                   <div class="num">
+                                       6
+                                   </div>
+                                   <p>
+                                       Его работоспо- собность обеспечивало <br> <span>4 смены  по 600 человек</span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class= "swiper-slide card    card-box" >
+                               <div class="box">
+                                   <div class="num">
+                                       7
+                                   </div>
+                                   <p>
+                                       В следствие ЧП бункер был готов к <span>1 месяцу автономной работы</span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class= "swiper-slide card    card-box" >
+                               <div class="box">
+                                   <div class="num">
+                                       8
+                                   </div>
+                                   <p>
+                                       В следствие ЧП бункер был готов к <span>1 месяцу автономной работы</span>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="swiper-navigation">
+                       <div id="swiperPrev" class="swiper-button-prev ">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f34747" class="bi bi-caret-left" viewBox="0 0 16 16">
+                               <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                           </svg>
+                       </div>
+                       <div id="swiperNExt" class="swiper-button-next ">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f34747" class="bi bi-caret-right" viewBox="0 0 16 16">
+                               <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                           </svg>
+                       </div>
+                   </div>
 
             </div>
             <iframe src="https://www.youtube.com/embed/hi4l-UVhISk"
@@ -930,28 +945,6 @@
     <button title="Close (Esc)" type="button" class="mfp-close">×</button>
     <div class="after"></div>
 </div>
-<!--
-callback form
-callback1
-<div id="callback-form" class="   white-popup-block mfp-hide">
-    <div class="section-title">Куда вам перезвонить?</div>
-        <form action="">
-            <input type="text" placeholder="+7 000 000-00-00 ">
-            <button class="button">Заказать звонок</button>
-            <a href="#">Или позвоните нам</a>
-        </form>
-    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-    <div class="after"></div>
-</div>
-callback2
-<div id="callback-ok" class="   white-popup-block mfp-hide">
-    <p>
-        Звонок заказан. <br> Наш менеджер свяжется с вами<br>  в  течение часа.
-    </p>
-        <a href="#">Или позвоните нам</a>
-
-</div>
--->
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
@@ -961,16 +954,10 @@ callback2
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
-        integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
-        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
 <script src="assets/js/datepicker-full.min.js"></script>
+<script src="assets/js/animate-box.js"></script>
 <script src="assets/js/script.js"></script>
-<script type="text/javascript">
-    {
-        if (screen.width > 1024) document.write ('<script type="text/javascript" src="assets/js/animate-box.js" ></sc' + 'ript>');
-    }
-</script>
 <script src="assets/js/datepicker-main.js"></script>
 </body>
 </html>
