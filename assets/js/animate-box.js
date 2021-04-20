@@ -1,9 +1,7 @@
 var mySwiper = new Swiper('.swiper-container', {
     loop: true,
     speed: 800,
-    autoplay: {
-        delay: 3000,
-    },
+
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -13,7 +11,7 @@ var mySwiper = new Swiper('.swiper-container', {
         stretch: 50,
         depth: 150,
         modifier: 1,
-        slideShadows: false,
+        slideShadows: true,
     },
     breakpoints:{
         0:{
