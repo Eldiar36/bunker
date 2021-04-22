@@ -1,3 +1,4 @@
+
 jQuery('.excursion-more').on('click', function(e){
 
     let
@@ -27,23 +28,7 @@ jQuery('.excursion-more').on('click', function(e){
         });
     }
 });
-/*$(document).ready(function() {
-    $('.content_toggle').click(function () {
-        $('.content_block').toggleClass('hide');
-        if ($('.content_block').hasClass('hide')) {
-            $('.content_toggle').html('Показать еще <img style="width: 17px;height: 9px" src="assets/images/arrow_down.png" alt=""> ');
-        } else {
-            $('.content_toggle').html('Скрыть');
-            $('.content_toggle').toggleClass('scroll-top')
-            $(".scroll-top").click(function () {
-                elementClick = $(this).attr("href");
-                destination = $(elementClick).offset().top;
-                $("body,html").scrollTop( destination);
-            });
-        }
-        return false;
-    });
-});*/
+
 var textArea = document.querySelectorAll('[data-js=content]'),
     maxText = 100;
 
@@ -345,5 +330,20 @@ if (numzi < 4) {
     jQuery('.collection-more a').hide();
     jQuery('.collection-more').addClass('mb-5');
 }
-
+const shareButton = document.querySelector('.share'),
+    thisUrl = window.location.href,
+    thisTitle = document.title;
+shareButton.addEventListener('click', event => {
+    if (navigator.share) {
+        navigator.share({
+            title: thisTitle,
+            url: thisUrl
+        }).then(() => {
+            alert('Thanks for sharing!');
+        })
+            .catch(console.error);
+    } else {
+        alert('Web Share API не поддерживается');
+    }
+});_
 
