@@ -323,27 +323,23 @@ window.addEventListener('mousemove', function(e) {
 });
 
 
-Query('.collections .collection:gt(2)').wrapAll('<div class="container"><div class="row collection-mr"></div></div>');
-
-let numzi = jQuery(".collections").find(".collection").length;
-if (numzi < 4) {
-    jQuery('.collection-more a').hide();
-    jQuery('.collection-more').addClass('mb-5');
+function addEvent(parent, evt, selector, handler) {
+    parent.addEventListener(evt, function(event) {
+        if (event.target.matches(selector + ', ' + selector + ' *')) {
+            handler.apply(event.target.closest(selector), arguments);
+        }
+    }, false);
 }
-const shareButton = document.querySelector('.share'),
-    thisUrl = window.location.href,
-    thisTitle = document.title;
-shareButton.addEventListener('click', event => {
-    if (navigator.share) {
-        navigator.share({
-            title: thisTitle,
-            url: thisUrl
-        }).then(() => {
-            alert('Thanks for sharing!');
-        })
-            .catch(console.error);
-    } else {
-        alert('Web Share API не поддерживается');
-    }
-});_
+
+/* To be used as */
+
+addEvent(document, 'click', '.share', function(e) {
+
+    navigator.share({
+        title: 'Бункер', // Заголовок
+        text: 'Сходим в Бункер 42!', // Текст
+        url: 'https://eldiar36.github.io/bunker/card', // ссылка
+    });
+
+});
 
