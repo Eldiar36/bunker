@@ -322,20 +322,4 @@ window.addEventListener('mousemove', function(e) {
     bgthree.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 });*/
 
-function addEvent(parent, evt, selector, handler) {
-    parent.addEventListener(evt, function(event) {
-        if (event.target.matches(selector + ', ' + selector + ' *')) {
-            handler.apply(event.target.closest(selector), arguments);
-        }
-    }, false);
-}
-addEvent(document, 'click', '.share', function(e) {
-
-    navigator.share({
-        title: 'Бункер', // Заголовок
-        text: 'Сходим в Бункер 42!', // Текст
-        url: 'https://eldiar36.github.io/bunker/card', // ссылка
-    });
-
-});
 
