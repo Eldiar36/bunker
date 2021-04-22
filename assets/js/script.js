@@ -1,3 +1,113 @@
+jQuery('.excursion-more').on('click', function(e){
+
+    let
+        thiss = jQuery(this),
+        content = jQuery(this).closest('.collections').find('.collection-mr');
+
+    if(!thiss.hasClass('trigger')){
+        thiss.addClass('trigger');
+        thiss.html('Все Экскурсии');
+        thiss.attr("href", "#more");
+        content.css('opacity','0');
+        content.css('margin-top','0');
+        content.css('height','1px');
+        content.slideUp();
+    } else {
+        thiss.removeClass('trigger');
+        thiss.addClass('scroll-top');
+        thiss.html('Скрыть');
+        thiss.attr("href", "#nomore");
+        content.css('opacity','1');
+        content.css('height','auto');
+        content.slideDown();
+        jQuery('.scroll-top').on('click', function(e){
+            $('html, body').animate({
+                scrollTop: $("#excursion").offset().top  // класс объекта к которому приезжаем
+            }, 10); // С
+        });
+    }
+});
+/*$(document).ready(function() {
+    $('.content_toggle').click(function () {
+        $('.content_block').toggleClass('hide');
+        if ($('.content_block').hasClass('hide')) {
+            $('.content_toggle').html('Показать еще <img style="width: 17px;height: 9px" src="assets/images/arrow_down.png" alt=""> ');
+        } else {
+            $('.content_toggle').html('Скрыть');
+            $('.content_toggle').toggleClass('scroll-top')
+            $(".scroll-top").click(function () {
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                $("body,html").scrollTop( destination);
+            });
+        }
+        return false;
+    });
+});*/
+var textArea = document.querySelectorAll('[data-js=content]'),
+    maxText = 100;
+
+// For each one...
+[].forEach.call( textArea, function( el ) {
+
+    var textAreaLength = el.innerHTML.length,
+        teaserText = el.innerHTML.substr(0, 100),
+        fullText = el.innerHTML,
+        showTeaser = false;
+
+    // Check to see if this text length is more
+    // than the max
+    if (textAreaLength >= maxText) {
+        // Set flag
+        showTeaser = true;
+
+        // Set teaser text
+        el.innerHTML = teaserText;
+        el.innerHTML += el.innerHTML + '...';
+
+        // Create button
+        var button = document.createElement('button');
+
+        button.innerHTML = 'Подробнее';
+        button.classList.add('show-more');
+        el.appendChild(button);
+
+        // Button click event
+        button.onclick = function () {
+            if (showTeaser === true) {
+                // Update flag
+                showTeaser = false;
+
+                // Update button text
+                this.innerHTML = 'Скрыть';
+
+                // Show full text
+                el.innerHTML = fullText;
+
+                // Re-append the button
+                el.appendChild(this);
+            } else {
+                // Update flag
+                showTeaser = true;
+
+                // Update button text
+                this.innerHTML = 'Подробнее';
+
+                // Show teaser text
+                el.innerHTML = teaserText;
+                el.innerHTML += el.innerHTML + '...';
+
+                // Re-append the button
+                el.appendChild(this);
+            }
+            return false;
+        };
+    } else {
+        // Show full text
+        el.innerHTML = fullText;
+    }
+
+});
 
 $('.popular-slider').slick({
     infinite: false,
@@ -226,5 +336,14 @@ window.addEventListener('mousemove', function(e) {
     let y = e.clientY / window.innerHeight;
     bgthree.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 });
+
+
+Query('.collections .collection:gt(2)').wrapAll('<div class="container"><div class="row collection-mr"></div></div>');
+
+let numzi = jQuery(".collections").find(".collection").length;
+if (numzi < 4) {
+    jQuery('.collection-more a').hide();
+    jQuery('.collection-more').addClass('mb-5');
+}
 
 
