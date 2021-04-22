@@ -302,7 +302,7 @@ $('.mobile-menu li').on('click', function() {
 })
 
 
-
+/*
 let bg = document.querySelector('.mouse-parallax-bg');
 window.addEventListener('mousemove', function(e) {
     let x = e.clientX / window.innerWidth;
@@ -320,8 +320,7 @@ window.addEventListener('mousemove', function(e) {
     let x = e.clientX / window.innerWidth;
     let y = e.clientY / window.innerHeight;
     bgthree.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});
-
+});*/
 
 function addEvent(parent, evt, selector, handler) {
     parent.addEventListener(evt, function(event) {
@@ -330,9 +329,6 @@ function addEvent(parent, evt, selector, handler) {
         }
     }, false);
 }
-
-/* To be used as */
-
 addEvent(document, 'click', '.share', function(e) {
 
     navigator.share({
