@@ -255,7 +255,6 @@ jQuery(document).ready(function ($) {
     $('.booking-popup').magnificPopup({
         type: 'inline',
         fixedContentPos: true,
-
     });
 });
 $(document).ready(function() {
