@@ -246,11 +246,6 @@ $('.quantity_inner .quantity').bind("change keyup input click", function () {
         this.value = parseInt($(this).data('max-count'));
     }
 });
-/*$('.callback-popup').on('click', function() {
-    $(this).addClass('active')
-        .siblings().removeClass('active');
-
-})*/
 jQuery(document).ready(function ($) {
     $('.booking-popup').magnificPopup({
         type: 'inline',
@@ -276,21 +271,6 @@ $(document).ready(function() {
         $('body').css('overflow', 'visible');
     })
 });
-
-new universalParallax().init({
-    speed: 8.0
-});
-
-jQuery(function($){
-    $("#reviews-rating").viewportChecker({
-        callbackFunction:function(){
-            $(".progress-bar").hide();
-            $(".progress-bar").show();
-        }
-    });
-});
-//табы
-
 $('.nav-menu li').on('click', function() {
     $(this).addClass('active')
         .siblings().removeClass('active');
@@ -300,25 +280,15 @@ $('.mobile-menu li').on('click', function() {
         .siblings().removeClass('active');
 })
 
-
-/*
-let bg = document.querySelector('.mouse-parallax-bg');
-window.addEventListener('mousemove', function(e) {
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;
-    bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+$('.gallery-box').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+            enabled:true,
+            tCounter: '%curr% из %total%',
+        }
+    });
 });
-let bgtwo = document.querySelector('.mouse-parallax-bg-two');
-window.addEventListener('mousemove', function(e) {
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;
-    bgtwo.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});
-let bgthree = document.querySelector('.mouse-parallax-bg-three');
-window.addEventListener('mousemove', function(e) {
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;
-    bgthree.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});*/
 
 
