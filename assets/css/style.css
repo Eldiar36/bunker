@@ -66,7 +66,7 @@ header .header-top .right {
     align-items: center;
 }
 header .header-top .right .call {
-    margin-left: 35px;
+    margin-left: 20px;
 }
 header .logo{
     z-index: 999;
@@ -79,7 +79,11 @@ header .logo img {
 .burger-menu {
     display:block;
 }
-
+.burger-menu_button{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
 .burger-menu_nav {
     background-color: rgb(28, 28, 28);
     border-radius: 30px;
@@ -101,6 +105,13 @@ header .logo img {
 .burger-menu.burger-menu_active .burger-menu_nav {
     left: 0;
     opacity: 0.949;
+}
+.restaurant-card .home-box-wrapper{
+    width: 100%;
+    overflow-x: scroll;
+}
+.restaurant-card .home-box{
+    width: 110%;
 }
 
 .burger-menu .burger-menu_nav .mobile-menu li {
@@ -1405,7 +1416,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     text-transform: uppercase;
     font-size: 12px;
 }
-.excursion-more{
+.excursion-more,
+.excursion-more-two{
     z-index: 10000;
     position: relative;
 }
@@ -1415,7 +1427,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .excursion-box {
     grid-row-gap: 40px;
 }
-.excursion-box.collection-mr {
+.excursion-box.collection-mr,
+.excursion-box.collection-mr-two {
     height: 1px;
     display: none;
     opacity: 0;

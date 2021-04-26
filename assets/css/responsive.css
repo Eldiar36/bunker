@@ -345,7 +345,8 @@
         width: 292px;
         margin: 0 auto 0 auto;
     }
-    #excursion .excursion-more[href^="#nomore"]{
+    #excursion .excursion-more[href^="#nomore"],
+    #excursion .excursion-more-two[href^="#nomore"]{
         margin: 40px  auto 0 auto;
         transition: .3s ease-in-out;
 
@@ -531,9 +532,14 @@
         height: 45px;
         margin-top: 38px;
     }
+    #reviews-rating .reviews{
+        position: relative;
+    }
     #reviews-rating .reviews .button2 {
         width: 180px;
-        margin-top:61px;
+
+        position: absolute;
+        bottom: 0;
     }
     .map {
         width: 390px;
@@ -1072,7 +1078,13 @@
         grid-template-columns: 1fr;
         grid-column-gap: 20px;
     }
-
+    .mfp-image-holder .mfp-close {
+        right: 0;
+        top: 20px;
+    }
+    #home.restaurant-card .btn-group .gallery-box{
+        display: none;
+    }
     .white-popup-block {
         width: 100%;
         padding: 0 0 30px 0;

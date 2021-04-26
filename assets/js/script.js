@@ -1,3 +1,14 @@
+const elem = document.querySelector('input[name="datepicker"]');
+const datepicker = new Datepicker (elem, {
+    autohide: true,
+    disableTouchKeyboard:true,
+    format: 'mm . dd . yyyy',
+    l:"ru",
+    allowOneSidedRange: true,
+    nextArrow: '>',
+    prevArrow: '<',
+    weekStart: 1,
+});
 
 jQuery('.excursion-more').on('click', function(e){
 
@@ -7,7 +18,7 @@ jQuery('.excursion-more').on('click', function(e){
 
     if(!thiss.hasClass('trigger')){
         thiss.addClass('trigger');
-        thiss.html('Все Экскурсии');
+        thiss.html('Все экскурсии');
         thiss.attr("href", "#more");
         content.css('opacity','0');
         content.css('margin-top','0');
@@ -28,7 +39,35 @@ jQuery('.excursion-more').on('click', function(e){
         });
     }
 });
+jQuery('.excursion-more-two').on('click', function(e){
 
+    let
+        thiss = jQuery(this),
+        content = jQuery(this).closest('.collections-two').find('.collection-mr-two');
+
+    if(!thiss.hasClass('trigger')){
+        thiss.addClass('trigger');
+        thiss.html('Все залы');
+        thiss.attr("href", "#more");
+        content.css('opacity','0');
+        content.css('margin-top','0');
+        content.css('height','1px');
+        content.slideUp();
+    } else {
+        thiss.removeClass('trigger');
+        thiss.addClass('scroll-top-two');
+        thiss.html('Скрыть');
+        thiss.attr("href", "#nomore");
+        content.css('opacity','1');
+        content.css('height','auto');
+        content.slideDown();
+        jQuery('.scroll-top-two').on('click', function(e){
+            $('html, body').animate({
+                scrollTop: $("#excursion").offset().top  // класс объекта к которому приезжаем
+            }, 10); // С
+        });
+    }
+});
 var textArea = document.querySelectorAll('[data-js=content]'),
     maxText = 100;
 
