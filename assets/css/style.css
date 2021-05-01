@@ -2835,6 +2835,14 @@ img.mfp-img {
     font-weight: 700;
     margin-bottom: 11px;
 }
+#lasertag .popular-slider .ex-card.second-var:nth-child(2) .card-header{
+    background: url("../images/laz2.png")no-repeat;
+    background-size: cover;
+}
+#lasertag .popular-slider .ex-card.second-var:nth-child(3) .card-header{
+    background: url("../images/laz3.png")no-repeat;
+    background-size: cover;
+}
  #team-building.lasertag .ex-card{
      padding: 23px 20px 0 20px;
  }
