@@ -1058,8 +1058,96 @@
         padding: 0 0 75px 0;
         display: block;
     }
-
     /*restaurants-card styles end*/
+    /*lazetag.html styles start*/
+    #home.lasertag {
+        background: url("../images/lasertag-pc.png")no-repeat bottom;
+        background-size: cover;
+        padding: 370px 0 25px 0;
+    }
+    #home.lasertag .home-box .title span {
+        display: inline-block;
+    }
+    #home .home-box .title {
+        margin: 25px auto 30px auto;
+        width: 80%;
+    }
+    #lasertag .info {
+        display: grid;
+        grid-template-columns: 0.33fr 0.67fr;
+        grid-column-gap: 20px;
+    }
+
+    #lasertag .popular-slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    #lasertag .popular-slider .ex-card.second-var .card-header .title {
+        font-size: 28px;
+        color: #ffffff;
+    }
+    #lasertag .popular-slider .ex-card.second-var .card-header .subtitle br {
+        display: block;
+    }
+    #lasertag .popular-slider .ex-card.second-var .card-header{
+        height: 440px;
+        padding: 26px 21px 55px 21px
+    }
+    #lasertag .popular-slider .ex-card.second-var:nth-child(2) .card-header{
+        background: url("../images/laz2.png")no-repeat;
+        background-size: cover;
+    }
+    #lasertag .popular-slider .ex-card.second-var:nth-child(3) .card-header{
+        background: url("../images/laz3.png")no-repeat;
+        background-size: cover;
+    }
+    #game-format.lasertag .ex-card .card-body .options .item {
+        margin-bottom: 0;
+    }
+    #game-format .ex-card .card-body .options .title {
+        margin-bottom: 0;
+    }
+    #our-offer{
+        display: none;
+    }
+    #team-building.lasertag .container {
+        padding: 0 20px;
+    }
+    #booking-room.lasertag .btn-group {
+        margin-top: 20px;
+    }
+    #team-building.lasertag .box {
+        padding: 50px 128px 30px 60px;
+        background: url("../images/corporate-pc-las.png")no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #team-building.lasertag .box h2{
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+    #team-building .box .bottom {
+        margin: 0 90px 0 90px;
+    }
+    #team-building.lasertag .button {
+        margin-top: 44px;
+    }
+    #team-building.lasertag .ex-card {
+       display: none;
+    }
+    #guides.lasertag{
+        padding: 85px 0 35px 0;
+    }
+    #guides.lasertag .partners{
+        padding: 0 20px 0 0;
+    }
+    #guides.lasertag .partners,
+    #guides.lasertag .address{
+        margin-top: 0;
+    }
+    /*lazetag.html styles end*/
 }
 @media (min-width: 1024px) and (max-width: 1200px){
     .call-me-box {

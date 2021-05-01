@@ -2725,3 +2725,167 @@ img.mfp-img {
     margin-top: 50px;
 }
 /*restaurants-card styles end*/
+
+/*lasertag styles start*/
+#home.lasertag {
+    padding: 360px 0 30px 0;
+    background: url("../images/lasertag.png")no-repeat;
+    background-size: cover;
+}
+#home.lasertag .title {
+    margin-bottom: 16px;
+}
+#home.lasertag .button{
+    width: 175px;
+}
+#popular.lasertag .ex-card .card-header.second {
+    background: url("../images/format3.png")no-repeat center;
+    background-size: cover;
+}
+#lasertag{
+    padding:30px 0 44px 0;
+}
+#lasertag .box .section-title{
+    color: #f34747;
+    margin-bottom: 15px;
+}
+#lasertag .box .info p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+}
+#lasertag .box .info p:first-child{
+    margin-bottom: 24px;
+}
+#lasertag .popular-slider{
+    padding-left: 0;
+}
+#lasertag .info{
+    margin-bottom: 50px;
+}
+#lasertag .popular-slider .slick-next,
+#lasertag .popular-slider .slick-prev{
+    display: none!important;
+}
+#lasertag .popular-slider .ex-card .card-header{
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 26px 21px 18px 21px;
+    background: url("../images/lasertag1.png")no-repeat center;
+    background-size: cover;
+}
+#lasertag .popular-slider .ex-card .card-header:after{
+    display: none;
+}
+#lasertag .popular-slider .ex-card.second-var .card-header .title{
+    font-size: 24px;
+    color: #ffffff;
+}
+#lasertag .popular-slider .ex-card.second-var:first-child .card-header{
+    background: url("../images/lasertag1.png")no-repeat center;
+    background-size: cover;
+
+}
+#lasertag .popular-slider .ex-card.second-var .card-header .subtitle{
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+}
+#team-building.lasertag .box{
+    padding: 35px 128px 45px 23px;
+    background: url("../images/las-corporate.png")no-repeat center;
+    background-size: cover;
+    border-radius: 0;
+}
+#team-building.lasertag .box p {
+    margin-bottom: 0;
+}
+#team-building.lasertag .box h2 {
+    margin-bottom: 148px;
+}
+#team-building.lasertag .container{
+    padding: 0;
+}
+ .ex-card .card-body .options .item {
+    display: grid;
+    grid-template-columns: 1.17fr 1fr;
+    grid-column-gap: 17px;
+    margin-bottom: 3px;
+}
+.ex-card .card-body .options .name,
+.ex-card .card-body .options .ans {
+    font-size: 16px;
+    font-weight: 500;
+}
+ .ex-card .card-body .options .ans {
+    color: #f34747;
+}
+ .ex-card .card-body .options .name {
+    color: #Ffffff;
+}
+.ex-card .card-body .options:first-child {
+    margin-bottom: 22px;
+}
+ .ex-card .card-body .options .title {
+    font-size: 16px;
+    color: #Ffffff;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+ #team-building.lasertag .ex-card{
+     padding: 23px 20px 0 20px;
+ }
+#team-building.lasertag .button{
+    width: 175px;
+    margin-top: 34px;
+}
+#our-offer.lasertag{
+    padding: 50px 0 57px 0;
+}
+#our-offer.lasertag .section-title{
+    margin-bottom: 20px;
+}
+#our-offer.lasertag .link {
+    font-size: 16px;
+    color: #f34747;
+    text-decoration: underline;
+}
+#our-offer.lasertag .offer-box .box:first-child img{
+    width: 44px;
+    height: 58px;
+}
+#our-offer.lasertag .offer-box .box:nth-child(2) img{
+    width: 44px;
+    height: 39px;
+}
+#our-offer.lasertag .offer-box.second .box:nth-child(1) img{
+    width: 38px;
+    height: 52px;
+}
+#our-offer.lasertag .offer-box.second .box:nth-child(2) img{
+    width: 52px;
+    height: 42px;
+}
+#guides.lasertag {
+    padding: 0 0 35px 0;
+}#lasertag .popular-slider .ex-card.second-var .card-header .subtitle br {
+     display: block;
+ }
+#booking-room.lasertag .price {
+    margin: 0;
+}
+#booking-room.lasertag .btn-group {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.white-popup-block.lasertag .contacts .btn-group .button {
+    width: 162px;
+    margin: 0;
+}
+/*lasertag styles end*/
