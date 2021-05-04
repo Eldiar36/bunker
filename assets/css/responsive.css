@@ -1102,6 +1102,9 @@
         background: url("../images/laz3.png")no-repeat;
         background-size: cover;
     }
+    #game-format.lasertag .ex-card.pve .card-body .description{
+        margin-bottom: 85px;
+    }
     #game-format.lasertag .ex-card .card-body .options .item {
         margin-bottom: 0;
     }
