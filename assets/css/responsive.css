@@ -797,7 +797,7 @@
         grid-column-gap: 20px;
     }
     #game-format {
-        padding: 70px 0 80px 0;
+        padding: 0 0 80px 0;
     }
     #game-format .format-box {
         display: grid;
@@ -1105,6 +1105,7 @@
     #game-format.lasertag .ex-card.pve .card-body .description{
         margin-bottom: 85px;
     }
+
     #game-format.lasertag .ex-card .card-body .options .item {
         margin-bottom: 0;
     }
