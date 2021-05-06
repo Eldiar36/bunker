@@ -2898,3 +2898,35 @@ img.mfp-img {
 }
 
 /*lasertag styles end*/
+#popup-done .title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #f34747;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+#popup-done .description {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+    margin-bottom: 150px;
+}
+#popup-done  .button2{
+    width: 160px;
+}
+#popup-done .mfp-close {
+    top: -34px;
+    right: 0;
+}
+#popup-done {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+.mfp-content {
+    width: 100%;
+    cursor: auto;
+    height: 100%;
+}
