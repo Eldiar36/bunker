@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
+          integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+</head>
+<body class="contacts-page">
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <a href="gift-card.html" class="gift-cert">
+                Подарочные сертификаты
+            </a>
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </a>
+            <div class="right">
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-menu_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5"
+                             height="20" viewBox="0 0 14 58">
+                            <image id="three-dots-vertical" width="14" height="58"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAA6CAYAAACAo2hqAAACDUlEQVRIie2XsWsUQRTGf1mDikyhWApBSETyDwgSC5sjQ4hFihAsLQM2IqQIWAkSrrEwcKVdLCwsPMIDG4uAkH8gBBMIgqUoZAkqCSdveXNMksvtzIpgka+c+X4785i33+yO9Ho9YpXeXwLuA+M2vAt8dCK/Yl8fLL0fAZ4Az4CrHNcP4Dnw0on0+mDp/QXgDTDPcL0FHjqRo8JsywkQ5lmuVtyfnr4OfAGuJICqA2BMV5zNgDDvrIKTGVDQpIKjDcCLhdWXqz0F1xuA64UT2QHWMqA1ZcI5Pga2E6Bt81KBTuQ7MAW8HwLp3JR5GdTkd4A5a3LtXy3lnRPZjH2nwFQVjahz8B+Bp16p0vsb9nLHKdd1Il9jX5xyl4E2sDjggYdAB1hyIj+JUk6hD8C9mh1uAC2FQ43tBAjztLGU05r2MiJEt30zpFxO7oyGlBtPMJ/UxF81wG4DrsqcrhWcKvV2C+uITgbYUSbUuGSHW6cN8/ZTTtuoBbw6Y9uHNtc61nKxsps8V+cp91+Bg1IuXHMTNjT8miu91w+l18CDMxbRi/WRE/lGlHLXgE/A7Zod6lV+V2/lUONqAoR5VrGU01o+J0CxbumKM5mQakbBsQZglas5eRP0W8GtBuBWSLmDDEi9Vcrpga5kgCvKhHN8YR/qdVKPevspdwQsAE/tV+GkdEznFsw7MOXqf1iAP2L/v5H3WrZ3AAAAAElFTkSuQmCC"/>
+                        </svg>
+                    </div>
+                    <nav class="burger-menu_nav">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="index.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="12" height="13" viewBox="0 0 36 38">
+                                        <image id="house-door-fill" width="36" height="38"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAABXUlEQVRYhe3Yu0oDQRiG4dcTCC5YaCu5C7GzEZJKEG/CK9C0VpuLsLOxsV/Q0kLs7SwFLewiamyUH2ZgMmR3dg7sppgPApnTz8PMwmyyMh0OSZAjVeLet1RRVXPt1QSYMXCnPuPYYrEgAZRGu4xFrSfE6Oi+idUv7QOj/bgIHwqqw9Sh9oALa84hcAW8mJ0hR+bCmCi9A2s1cwq7w3eH2mJMlOSm7QIfkC9GR9YM2k5ue2ShGJ2zlKBYjFdcoE4xOECdY2gA9YKhBtQl5tjusEFd78zl52g0d32YoL6OqTRRGnTe1zOjIigxIC9oW8BUvvcIkvwBO7JDG0uAQRm2U7wxJk0GuZJBriwdKOZXxwdwC/xY/ZvAKbDbNegEeKgZu24Ya0zMkb02jD2HFs0PtSsZ5EoGuZJBrgjoS73C+kTmvzfM/w6s+SZXx6/6Z2vfY/HTgjvMzCykZlFVs3+ci0JiJzg/dgAAAABJRU5ErkJggg=="/>
+                                    </svg>
+                                    главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="14" viewBox="0 0 42 42">
+                                        <image id="table" width="42" height="42"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABuklEQVRYhe2ZPUvDQByHH0MRsXETHMSX0W7S1dpuNqNDF3Fz6Sq69QO42VHXLvoBVCSOlc4O6uDk5iYo2iLUl8rBPyWUvlzwbFO4Z7lQ+rs+vVzuJTfxns8jZIESkAGSjJYGUAMOXN+/ViaO6OwBVSAfA0nEQblU656n3FAtmhXJOJNz5HbHnZIjfTLuZJyY9MlBJJ2/5YeHFTXN2IgmQtePwLlmbgeYAZ6BE81MAZgHmsCxZmYDSHWK3gG7mhVsiuhThMyqiH6EM67v9wzUPa8SiNo+ahorahoraprw8JQGKpr1z0q5GCGzIuV0OFP3vH6Z9spOLZxb/9AAxhnLW38JbGvmboEF4B5Y18xcAGvAG7CkmTkCtjpFP4FXzQp+pPyOkPmSshXODJhCm8G1HZ5MY0VNM5bDk5oxliPmJiNkpqR0wpkBM5MbXNiZyTR2c9cFu7mLFVbUEO1nyJEX+8j6Mm6kxKfhyOkDsmcqxkW07nlFcVLUuh023AAPspDuRUHeVL8AZ5q/rebKOan3tM/3EtKS6dBnueCcSR2RHEb6y8Nj3/X9cvAwlZU1cBXqs6NEOSiXnJIE+AU0KGWqBZlwngAAAABJRU5ErkJggg=="/>
+                                    </svg>
+                                    Экскурсии
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="14" viewBox="0 0 40 40">
+                                        <image id="puzzle-fill" width="40" height="40"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADcUlEQVRYhc2ZTUgVURTHf6kF0pgF5SYzKncV1kqiFhHFG8qCyIUFEYQV1q6iwk21EYlsV1JBEUK5CII0mIhqUSmtUqRdIJRtbGHqk6BvjpyJ623mzcx78+T94TFv7sfcH2fuPefcOwumMxlS1ArgEtAELAbeAVeAZ2FDOJ6Xc/SKHHVlOlAzUA9MAD1Ab0j7OmAAWGmU7dTfSaA7HzuEAW4C7gCbrfLdQCVw1yp3gMcWnKkb+j8xZFlAWQvwNgDO1xnrvhy4DzREjCWQbUkBbQsK3IOIPrXWfSewN+Z4iS1pWlBe670YfaaN/63A2biDqRJZssy4ypxbFKNPlVp+u2GRpJJ+W+L08V9xU445Z6sauAnsBxbmCShakgSwOeHDjybnmSOZg0/jNPRfcX2BA8bVKHBC/eKssq6bybpu6Ov2ASeKCFUDrAaWAWuBW0bddUBCyUDWdQMXjg/YU0TAjcBH4KtVfsy0pCycIEgfsFfn1XtgEhjTaxrqUGdu63xA2X+Qph+U8LUBWAqsApar6ylUjZowmBJPsC7kuXMgg0Kdr23qStLQaaDLsGR1xDP/QYalW63qTAvxc0GSGN8OjADjEW3/SCZkA5ZrbE0avoql52ay4GhWEjfwz4cafMA6zeeiUqb51kyFOtLXunJLTU9kFV8sUbhPwGUB3FMCMLaGxc05njdepruvUlKfwkl4nHXUwyUEd1WCg+N5Wb+gQmPlDnHaEZ1rNPB3aPhKUz+AU47n3bYrxIIvpDLGQyq17VbgWop0kuplguAwYnG3lfoEaUrLfunWMy3IR8CrsEo71LWFbIRGNdk0JWHxTUqve1J3i1Wa6nU5njd7OGBnM2GW7AwoE0u2pwCHZje1el0vaV7WdVuCAIMgu600Hc0ZJTyOpAQYpMPkOJsRqCHdGpq7r+PABWBNEcF8LcsFKBq07vM6WylAH4jIqE1lCoSbyGP78JAEgFMx2oRJnPAB3Q/H3YjJwWd/EsDBGH4yTBIEXgI/rYOnMH2XHabjeb+TABLTmduS2GpGiKoYfY44njfk3yQBTArZpyve1FiO9mK5g47nzTliTgoYF1IypEPqzE11hbSXOddowxHhZqIgRUFh8TOwT86FAuokfH1TJyx+TlyJrNZ+f87ZKvQzxC7gnJ4tzujKk88QX+I+IOdnCOAv/Gi8PFBxAloAAAAASUVORK5CYII="/>
+                                    </svg>
+                                    Квесты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="restaurants.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="13" viewBox="0 0 42 38">
+                                        <image id="collection-fill" width="42" height="38"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAmCAYAAACyAQkgAAABWElEQVRYhe3YMUsDMRiA4fdEt4iLIIKzW8H/ILSrFZwE8Se41bWD4Ojk7uDk4PqJi9CtqODqKiqCDlK3WpFPe3CWC01srCnkXVru0uMhvXBcsk6thmOLwD4w5/qDIb0Cu0bk0WXwtMeFt4GtQMi8W2DPZeCUx0XPgfuRWD97AM5cB/vM6CWwNCLu1/nM6L9mW0wLwIbnjIfoHTgxIk+DJ2yQQ2B9DLCyVoH64HHbXx9y0fh2VzbeNqM7wBEwO2bkG3BddsIG/QCu/tb0nRFxGldcTDPAcv8zhrr6QDAi3SJ0EzgA5iNB5j3rbWhEjhW6BpzG4bJW11XfjBRXrKnQSjweaxWFZpHiimUT86xP0NAlaOgSNHQJGroEDV2Chi5BQ5egoVNobwKcPYW2I4AMq63QRv9lP9bU1lBoC6gCNxFC1VQ1Iq187+kCWNGtoIh2S16MSOfrG/AJ58o8NKz7lAQAAAAASUVORK5CYII="/>
+                                    </svg>
+                                    проведение <br> мероприятий
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="14" viewBox="0 0 42 42">
+                                        <image id="map-fill" width="42" height="42"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABTElEQVRYhe2ZsUoDQRCGv4R0BlJFSCE2CYg2gj5AUiWFjY3vYOMD+QhC0PKqSCClglUMwSIggmglaiuyshcvcePNnUNUmA+Gu2Ju5+N2q/0Lz+02AqrATqJ2gTXgBricqyfJgjHlKJq+v3Q6K8A2nzPccwM4DYkukpIilV8kVQzNcaIN4CCj1B0wBraAVUF/LD8E6mlSIUrAQDgsyR5wBTSBc0F/3Vduijkkf4XSEoceAtfuuAl3YQbxGVHgHugDkzxLLVP0R5ioNiaqjYlqY6LamKg2JqqNiWpjotqYqDYmqo2JamOi2pioNiaqTd5rx3WgAtT+uuiZskcq/2XrH7L+0Tdg5IMDFyBs+uBAcj9/DBwBDeGsW+DCzzr5TjQpFX/gAobXQG9lLvIJybtYqCWQ+qhyFD0mG5xoF9jPIBXC5Ug9X2nyqVJfAN4BH7ZMWjKHUngAAAAASUVORK5CYII="/>
+                                    </svg>
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="gift-card.html" class="gift-certificate">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="16" height="16" viewBox="0 0 48 48">
+                                <image id="gift-fill" width="48" height="48"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB10lEQVRoge2ZP0/CQBjGfxBMgAHlU5i4kLC7yuLkQhgddOJLuBsTEidNdHAgLk5OfgE2BwcTY8Lgwoh/BjAYMadvzVlpr7XEa8n9koa73vuU52mv7QVyL40GMSkA20ATqANVYAhcA+fAKfAWcMgk2pnEDbAGXACrITV3wBZwO0dtIPmY5nsGA8h4T+rnoZ1LgIKcvYr0J8A+UJNpUJP+RMYrUl9IqDUSdQrtAEeagU3gakbdBnAJLEl/Vz7/qj02GYt6BZpauxNgANnf8emSaI1EDVDX2meGWn28nlBrJMo8y8lc9Xgw1N9r7apvzKTVx6tygt/DBFGuwBQYhZjyMzKMh6Efe2Qy7wUoAycimAZsJU3TD6nztiCGBl1f05VC6kbiuaym0KG8HbNE0fOsrkArY+Z1WnlJk1WKcZYSqWQhAoxT4OOvjFWAbja9f9JVj9G2dFoZuqHHcuLb+mpULRmW7fqKzJP3wtTXQmrHY7p9/2bhHqOmNU7UbSXg++Z+fPcis40LYBsXwDYugG1cANu4ALZxAWzjAtjGBbCNC2AbF8ASr0EBBhkwP9D/h/MHyMIPvT88+gPsATf/6ycWypvy+I0/wDOwDhykbDopL8qT8qY8fgF8ANIBn1M8MaJGAAAAAElFTkSuQmCC"/>
+                            </svg>
+                            Подарочные <br> сертификаты
+                        </a>
+                        <div class="language">
+                            <a href="#" class="active">ru</a>
+                            <a href="#">en</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="call-me-box-mobile">
+                    <a class="call callback-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747"
+                             class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                    </a>
+                    <div class=" callback-form ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
+                    <div class="callback-container">
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-pc">
+                <a href="#" class="number">
+                    +7 (499) 375-21-25
+                </a>
+                <div class="language">
+                    <a href="#" class="active">ru</a>
+                    <a href="#">en</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="nav-wrap d-flex">
+                <ul class="nav-menu d-flex">
+                    <li><a href="index.html"> главная</a></li>
+                    <li><a href="#"> Экскурсии</a></li>
+                    <li class="dropdown">
+                        <a href="#"> Квесты</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Фаертаг</a></li>
+                            <li><a href="#">Лазертаг</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="restaurants.html"> проведение мероприятий</a></li>
+                    <li><a href="contacts.html"> контакты</a></li>
+                </ul>
+                <div class="call-me-box">
+                    <a href="#callback-form" id="but1" data-toggle="modal" class="call-me callback-popup">
+                        Обратный звонок
+                    </a>
+                    <div class=" callback-form ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
+                    <div class="callback-container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="contacts">
+        <div class="container">
+            <div class="contacts-box">
+                <div class="title">
+                       Контакты
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts-info">
+            <div class="container">
+                <div class="info-wrapper">
+                    <div id="guides" class="contacts">
+                        <div class="guide-wrap">
+                            <div class="address">
+                                <div class="tabs">
+                                    <div class="title-box">
+                                        <div class="section-title">
+                                            Как нас найти
+                                        </div>
+                                        <ul class="tabs__caption">
+                                            <li class=" active">
+                                                Карта
+                                            </li>
+                                            <li>
+                                                Схема
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content active">
+                                        <div class="map">
+                                            <div style="position:relative;overflow:hidden;">
+                                                <a
+                                                        href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                                                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                                                    href="https://yandex.ru/maps/213/moscow/house/verkhnyaya_radishchevskaya_ulitsa_7s3/Z04YcAJgSUQGQFtvfXt1dXpmYw==/?ll=37.650442%2C55.741389&utm_medium=mapframe&utm_source=maps&z=18.49"
+                                                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Верхняя
+                                                Радищевская улица, 7с3 — Яндекс.Карты</a>
+                                                <iframe src="https://yandex.ru/map-widget/v1/-/CCUYeRUvsC"
+                                                        frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="schema">
+                                            <img src="assets/images/schema.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info">
+                            <div class="address-box">
+                                <div class="title">Адрес</div>
+                                <p>
+                                    Москва, 115172 5-й Котельнический пер., <br> 11 (ст.м. Таганская)
+                                </p>
+                            </div>
+                            <div class="work-time">
+                                <div class="title">Часы работы</div>
+                                <p>ПН-ВС 10:00–20:00</p>
+                            </div>
+                        </div>
+                        <div class="organization mobile">
+                            <div class="org-subtitle">
+                                По вопросам организации групповых и индивидуальных экскурсий, игр и квестов и других мероприятий
+                            </div>
+                            <div class="org-contacts">
+                                <div class="number">
+                                    <a href="tel:+7(499)375-21-25">
+                                        +7 (499) 375-21-25
+                                    </a>
+                                    <span>(WhatsApp, Telegram)</span>
+                                </div>
+                                <div class="mail">
+                                    <a href="mailto:office@bunker-42.ru">
+                                        office@bunker-42.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts-description">
+                            Объект находится в историческом центре Москвы в 300 метрах от станции метро «Таганская». Выйти
+                            из зала нужно на Нижнюю Радищевскую улицу, повернуть налево (ориентир — кафе «Кружка») и идти
+                            прямо по 5-му Котельническому переулку около 200 метров ориентиром послужит Храм. Указателей
+                            нет, но музейную вывеску с красной звездой (3-х этажный желтый особняк, зеленые ворота с красной
+                            звездой) будет видно издалека, так что потеряться на прямом отрезке сложно.
+                        </div>
+                    </div>
+                </div>
+                <div class="organization pc">
+                    <div class="org-subtitle">
+                        По вопросам организации групповых и индивидуальных экскурсий, мероприятий, игр и квестов
+                    </div>
+                    <div class="org-contacts">
+                        <div class="number">
+                            <a href="tel:+7(499)375-21-25">
+                                +7 (499) 375-21-25
+                            </a>
+                            <span>(WhatsApp, Telegram)</span>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:office@bunker-42.ru">
+                                office@bunker-42.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="logo-box">
+                <a href="#" class="logo">
+                    <img src="assets/images/footer-logo.png" alt="">
+                </a>
+                <a href="#" class="scrool-top">Наверх</a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <ul class="footer-nav">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Проведение мероприятий</a></li>
+                <li><a href="#">Квесты</a></li>
+                <li><a href="#">Подарочные сертификаты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="payments">
+                <img src="assets/images/payments.png" alt="">
+            </div>
+            <div class="contacts">
+                <div class="title">Свяжитесь с нами</div>
+                <div class="number-box">
+                    <a href="#">+7 (902) 666-44-22</a>
+                    <a href="#">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="assets/images/visota.png" alt="">
+            <div class="text">
+                <p>© 2010-2021 Бункер-42 </p>
+                <span>Все права защищены.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="assets/js/contacts-script.js"></script>
+
+</body>
+</html>

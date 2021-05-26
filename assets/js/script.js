@@ -2,7 +2,7 @@ const elem = document.querySelector('input[name="datepicker"]');
 const datepicker = new Datepicker (elem, {
     autohide: true,
     disableTouchKeyboard:true,
-    format: 'mm . dd . yyyy',
+    format: 'mm.dd.yyyy',
     l:"ru",
     allowOneSidedRange: true,
     nextArrow: '>',

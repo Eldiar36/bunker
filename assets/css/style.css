@@ -248,6 +248,7 @@ header .right-pc {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 12px;
+    border: none;
 }
 .button2 {
     border-radius: 10px;
@@ -263,6 +264,7 @@ header .right-pc {
     letter-spacing: 1px;
     justify-content: center;
     transition: .2s;
+
 }
 .button2:hover{
     color: #f34747;
@@ -727,6 +729,7 @@ footer {
     width: 140px;
     height: 20px;
     padding-left: 35px;
+    letter-spacing: 1px;
     border: none;
     font-style: italic;
     background: none;
@@ -2930,3 +2933,116 @@ img.mfp-img {
     cursor: auto;
     height: 100%;
 }
+
+
+/*contacts.html styles start*/
+
+#contacts {
+    padding: 83px 0 20px 0;
+    position: relative;
+    z-index: 100000;
+}
+
+#contacts  .title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #Ffffff;
+    font-weight: 700;
+}
+#contacts-info .info-box .info {
+    margin: 27px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 22px;
+}
+#contacts-info .info-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#contacts-info .container {
+    padding: 0;
+}
+#contacts-info  .info .address-box {
+    margin-right:0;
+}
+#contacts-info  .info .title {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#contacts-info  .info p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 23px;
+}
+#contacts-info .contacts-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #Ffffff;
+    margin: 0 20px 0 20px;
+}
+#contacts-info .organization{
+    margin: 40px 0 53px 0;
+    background: #312f2f;
+    padding: 33px 22px 26px 22px ;
+}
+#contacts-info .organization .org-subtitle{
+    font-size: 16px;
+    color: #Ffffff;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+#contacts-info .organization .org-contacts {
+    display: flex;
+}
+#contacts-info .organization .org-contacts .number{
+    margin-right: 47px;
+}
+#contacts-info .organization .org-contacts .number a{
+    display: block;
+}
+#contacts-info .organization .org-contacts .number a,
+#contacts-info .organization .org-contacts .number span,
+#contacts-info .organization .org-contacts .mail{
+    font-size: 14px;
+    color: #Ffffff;
+    line-height: 30px;
+}
+#guides.contacts  {
+    padding: 0;
+}
+#guides.contacts .title-box .section-title{
+    display: none;
+}
+/*contacts.html styles end*/
+
+
+/*gift-card html*/
+
+#home.gift-card{
+    background: url("../images/gifr-card.png")no-repeat;
+    background-size: contain;
+    padding: 423px 0 60px 0;
+}
+#home.gift-card .home-box .title{
+    margin-bottom: 27px;
+}
+#home.gift-card .home-box {
+    padding-right: 0;
+}
+#home.gift-card .home-box .button{
+    width: 202px;
+    margin-bottom: 52px;
+}
+#home.gift-card .home-box .description p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #Ffffff;
+    margin: 0;
+}
+#home.gift-card .home-box .description p:first-child{
+   margin: 0 0 33px 0;
+}
+
+/*gift-card html*/

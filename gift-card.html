@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
+          integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+</head>
+<body class="gift-card">
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <a href="#" class="gift-cert">
+                Подарочные сертификаты
+            </a>
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </a>
+            <div class="right">
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-menu_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5"
+                             height="20" viewBox="0 0 14 58">
+                            <image id="three-dots-vertical" width="14" height="58"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAA6CAYAAACAo2hqAAACDUlEQVRIie2XsWsUQRTGf1mDikyhWApBSETyDwgSC5sjQ4hFihAsLQM2IqQIWAkSrrEwcKVdLCwsPMIDG4uAkH8gBBMIgqUoZAkqCSdveXNMksvtzIpgka+c+X4785i33+yO9Ho9YpXeXwLuA+M2vAt8dCK/Yl8fLL0fAZ4Az4CrHNcP4Dnw0on0+mDp/QXgDTDPcL0FHjqRo8JsywkQ5lmuVtyfnr4OfAGuJICqA2BMV5zNgDDvrIKTGVDQpIKjDcCLhdWXqz0F1xuA64UT2QHWMqA1ZcI5Pga2E6Bt81KBTuQ7MAW8HwLp3JR5GdTkd4A5a3LtXy3lnRPZjH2nwFQVjahz8B+Bp16p0vsb9nLHKdd1Il9jX5xyl4E2sDjggYdAB1hyIj+JUk6hD8C9mh1uAC2FQ43tBAjztLGU05r2MiJEt30zpFxO7oyGlBtPMJ/UxF81wG4DrsqcrhWcKvV2C+uITgbYUSbUuGSHW6cN8/ZTTtuoBbw6Y9uHNtc61nKxsps8V+cp91+Bg1IuXHMTNjT8miu91w+l18CDMxbRi/WRE/lGlHLXgE/A7Zod6lV+V2/lUONqAoR5VrGU01o+J0CxbumKM5mQakbBsQZglas5eRP0W8GtBuBWSLmDDEi9Vcrpga5kgCvKhHN8YR/qdVKPevspdwQsAE/tV+GkdEznFsw7MOXqf1iAP2L/v5H3WrZ3AAAAAElFTkSuQmCC"/>
+                        </svg>
+                    </div>
+                    <nav class="burger-menu_nav">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="index.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="12" height="13" viewBox="0 0 36 38">
+                                        <image id="house-door-fill" width="36" height="38"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAABXUlEQVRYhe3Yu0oDQRiG4dcTCC5YaCu5C7GzEZJKEG/CK9C0VpuLsLOxsV/Q0kLs7SwFLewiamyUH2ZgMmR3dg7sppgPApnTz8PMwmyyMh0OSZAjVeLet1RRVXPt1QSYMXCnPuPYYrEgAZRGu4xFrSfE6Oi+idUv7QOj/bgIHwqqw9Sh9oALa84hcAW8mJ0hR+bCmCi9A2s1cwq7w3eH2mJMlOSm7QIfkC9GR9YM2k5ue2ShGJ2zlKBYjFdcoE4xOECdY2gA9YKhBtQl5tjusEFd78zl52g0d32YoL6OqTRRGnTe1zOjIigxIC9oW8BUvvcIkvwBO7JDG0uAQRm2U7wxJk0GuZJBriwdKOZXxwdwC/xY/ZvAKbDbNegEeKgZu24Ya0zMkb02jD2HFs0PtSsZ5EoGuZJBrgjoS73C+kTmvzfM/w6s+SZXx6/6Z2vfY/HTgjvMzCykZlFVs3+ci0JiJzg/dgAAAABJRU5ErkJggg=="/>
+                                    </svg>
+                                    главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="14" viewBox="0 0 42 42">
+                                        <image id="table" width="42" height="42"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABuklEQVRYhe2ZPUvDQByHH0MRsXETHMSX0W7S1dpuNqNDF3Fz6Sq69QO42VHXLvoBVCSOlc4O6uDk5iYo2iLUl8rBPyWUvlzwbFO4Z7lQ+rs+vVzuJTfxns8jZIESkAGSjJYGUAMOXN+/ViaO6OwBVSAfA0nEQblU656n3FAtmhXJOJNz5HbHnZIjfTLuZJyY9MlBJJ2/5YeHFTXN2IgmQtePwLlmbgeYAZ6BE81MAZgHmsCxZmYDSHWK3gG7mhVsiuhThMyqiH6EM67v9wzUPa8SiNo+ahorahoraprw8JQGKpr1z0q5GCGzIuV0OFP3vH6Z9spOLZxb/9AAxhnLW38JbGvmboEF4B5Y18xcAGvAG7CkmTkCtjpFP4FXzQp+pPyOkPmSshXODJhCm8G1HZ5MY0VNM5bDk5oxliPmJiNkpqR0wpkBM5MbXNiZyTR2c9cFu7mLFVbUEO1nyJEX+8j6Mm6kxKfhyOkDsmcqxkW07nlFcVLUuh023AAPspDuRUHeVL8AZ5q/rebKOan3tM/3EtKS6dBnueCcSR2RHEb6y8Nj3/X9cvAwlZU1cBXqs6NEOSiXnJIE+AU0KGWqBZlwngAAAABJRU5ErkJggg=="/>
+                                    </svg>
+                                    Экскурсии
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="14" viewBox="0 0 40 40">
+                                        <image id="puzzle-fill" width="40" height="40"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADcUlEQVRYhc2ZTUgVURTHf6kF0pgF5SYzKncV1kqiFhHFG8qCyIUFEYQV1q6iwk21EYlsV1JBEUK5CII0mIhqUSmtUqRdIJRtbGHqk6BvjpyJ623mzcx78+T94TFv7sfcH2fuPefcOwumMxlS1ArgEtAELAbeAVeAZ2FDOJ6Xc/SKHHVlOlAzUA9MAD1Ab0j7OmAAWGmU7dTfSaA7HzuEAW4C7gCbrfLdQCVw1yp3gMcWnKkb+j8xZFlAWQvwNgDO1xnrvhy4DzREjCWQbUkBbQsK3IOIPrXWfSewN+Z4iS1pWlBe670YfaaN/63A2biDqRJZssy4ypxbFKNPlVp+u2GRpJJ+W+L08V9xU445Z6sauAnsBxbmCShakgSwOeHDjybnmSOZg0/jNPRfcX2BA8bVKHBC/eKssq6bybpu6Ov2ASeKCFUDrAaWAWuBW0bddUBCyUDWdQMXjg/YU0TAjcBH4KtVfsy0pCycIEgfsFfn1XtgEhjTaxrqUGdu63xA2X+Qph+U8LUBWAqsApar6ylUjZowmBJPsC7kuXMgg0Kdr23qStLQaaDLsGR1xDP/QYalW63qTAvxc0GSGN8OjADjEW3/SCZkA5ZrbE0avoql52ay4GhWEjfwz4cafMA6zeeiUqb51kyFOtLXunJLTU9kFV8sUbhPwGUB3FMCMLaGxc05njdepruvUlKfwkl4nHXUwyUEd1WCg+N5Wb+gQmPlDnHaEZ1rNPB3aPhKUz+AU47n3bYrxIIvpDLGQyq17VbgWop0kuplguAwYnG3lfoEaUrLfunWMy3IR8CrsEo71LWFbIRGNdk0JWHxTUqve1J3i1Wa6nU5njd7OGBnM2GW7AwoE0u2pwCHZje1el0vaV7WdVuCAIMgu600Hc0ZJTyOpAQYpMPkOJsRqCHdGpq7r+PABWBNEcF8LcsFKBq07vM6WylAH4jIqE1lCoSbyGP78JAEgFMx2oRJnPAB3Q/H3YjJwWd/EsDBGH4yTBIEXgI/rYOnMH2XHabjeb+TABLTmduS2GpGiKoYfY44njfk3yQBTArZpyve1FiO9mK5g47nzTliTgoYF1IypEPqzE11hbSXOddowxHhZqIgRUFh8TOwT86FAuokfH1TJyx+TlyJrNZ+f87ZKvQzxC7gnJ4tzujKk88QX+I+IOdnCOAv/Gi8PFBxAloAAAAASUVORK5CYII="/>
+                                    </svg>
+                                    Квесты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="13" viewBox="0 0 42 38">
+                                        <image id="collection-fill" width="42" height="38"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAmCAYAAACyAQkgAAABWElEQVRYhe3YMUsDMRiA4fdEt4iLIIKzW8H/ILSrFZwE8Se41bWD4Ojk7uDk4PqJi9CtqODqKiqCDlK3WpFPe3CWC01srCnkXVru0uMhvXBcsk6thmOLwD4w5/qDIb0Cu0bk0WXwtMeFt4GtQMi8W2DPZeCUx0XPgfuRWD97AM5cB/vM6CWwNCLu1/nM6L9mW0wLwIbnjIfoHTgxIk+DJ2yQQ2B9DLCyVoH64HHbXx9y0fh2VzbeNqM7wBEwO2bkG3BddsIG/QCu/tb0nRFxGldcTDPAcv8zhrr6QDAi3SJ0EzgA5iNB5j3rbWhEjhW6BpzG4bJW11XfjBRXrKnQSjweaxWFZpHiimUT86xP0NAlaOgSNHQJGroEDV2Chi5BQ5egoVNobwKcPYW2I4AMq63QRv9lP9bU1lBoC6gCNxFC1VQ1Iq187+kCWNGtoIh2S16MSOfrG/AJ58o8NKz7lAQAAAAASUVORK5CYII="/>
+                                    </svg>
+                                    проведение <br> мероприятий
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="14" height="14" viewBox="0 0 42 42">
+                                        <image id="map-fill" width="42" height="42"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABTElEQVRYhe2ZsUoDQRCGv4R0BlJFSCE2CYg2gj5AUiWFjY3vYOMD+QhC0PKqSCClglUMwSIggmglaiuyshcvcePNnUNUmA+Gu2Ju5+N2q/0Lz+02AqrATqJ2gTXgBricqyfJgjHlKJq+v3Q6K8A2nzPccwM4DYkukpIilV8kVQzNcaIN4CCj1B0wBraAVUF/LD8E6mlSIUrAQDgsyR5wBTSBc0F/3Vduijkkf4XSEoceAtfuuAl3YQbxGVHgHugDkzxLLVP0R5ioNiaqjYlqY6LamKg2JqqNiWpjotqYqDYmqo2JamOi2pioNiaqTd5rx3WgAtT+uuiZskcq/2XrH7L+0Tdg5IMDFyBs+uBAcj9/DBwBDeGsW+DCzzr5TjQpFX/gAobXQG9lLvIJybtYqCWQ+qhyFD0mG5xoF9jPIBXC5Ug9X2nyqVJfAN4BH7ZMWjKHUngAAAAASUVORK5CYII="/>
+                                    </svg>
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="gift-certificate">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="16" height="16" viewBox="0 0 48 48">
+                                <image id="gift-fill" width="48" height="48"
+                                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB10lEQVRoge2ZP0/CQBjGfxBMgAHlU5i4kLC7yuLkQhgddOJLuBsTEidNdHAgLk5OfgE2BwcTY8Lgwoh/BjAYMadvzVlpr7XEa8n9koa73vuU52mv7QVyL40GMSkA20ATqANVYAhcA+fAKfAWcMgk2pnEDbAGXACrITV3wBZwO0dtIPmY5nsGA8h4T+rnoZ1LgIKcvYr0J8A+UJNpUJP+RMYrUl9IqDUSdQrtAEeagU3gakbdBnAJLEl/Vz7/qj02GYt6BZpauxNgANnf8emSaI1EDVDX2meGWn28nlBrJMo8y8lc9Xgw1N9r7apvzKTVx6tygt/DBFGuwBQYhZjyMzKMh6Efe2Qy7wUoAycimAZsJU3TD6nztiCGBl1f05VC6kbiuaym0KG8HbNE0fOsrkArY+Z1WnlJk1WKcZYSqWQhAoxT4OOvjFWAbja9f9JVj9G2dFoZuqHHcuLb+mpULRmW7fqKzJP3wtTXQmrHY7p9/2bhHqOmNU7UbSXg++Z+fPcis40LYBsXwDYugG1cANu4ALZxAWzjAtjGBbCNC2AbF8ASr0EBBhkwP9D/h/MHyMIPvT88+gPsATf/6ycWypvy+I0/wDOwDhykbDopL8qT8qY8fgF8ANIBn1M8MaJGAAAAAElFTkSuQmCC"/>
+                            </svg>
+                            Подарочные <br> сертификаты
+                        </a>
+                        <div class="language">
+                            <a href="#" class="active">ru</a>
+                            <a href="#">en</a>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="call-me-box-mobile">
+                    <a class="call callback-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747"
+                             class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                    </a>
+                    <div class=" callback-form ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
+                    <div class="callback-container">
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-pc">
+                <a href="#" class="number">
+                    +7 (499) 375-21-25
+                </a>
+                <div class="language">
+                    <a href="#" class="active">ru</a>
+                    <a href="#">en</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="nav-wrap d-flex">
+                <ul class="nav-menu d-flex">
+                    <li><a href="index.html"> главная</a></li>
+                    <li><a href="#"> Экскурсии</a></li>
+                    <li><a href="#"> Квесты</a></li>
+                    <li><a href="#"> проведение мероприятий</a></li>
+                    <li><a href="#"> контакты</a></li>
+                </ul>
+                <div class="call-me-box">
+                    <a href="#callback-form" id="but1" data-toggle="modal" class="call-me callback-popup">
+                        Обратный звонок
+                    </a>
+                    <div class=" callback-form ">
+                        <div class="content">
+                            <div class="section-title">Куда вам перезвонить?</div>
+                            <form action="">
+                                <input type="tel" placeholder="+7 000 000-00-00 ">
+                                <a href="#" class="button">Заказать звонок</a>
+                                <a href="#" class="call-you">Или позвоните нам</a>
+                            </form>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                            <div class="after"></div>
+                        </div>
+                    </div>
+                    <div class="callback-container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="home" class="gift-card">
+        <div class="container">
+            <div class="home-box">
+                <div class="title">
+                    Самая секретная экскурсия столицы <br> в подарок
+                </div>
+                <div class="wrap">
+                    <a href="#booking-room" class="button popup-with-zoom-anim booking-popup">Купить сертификат </a>
+                    <div class="description">
+                        <p>Один из лучших подарков нашего времени — это впечатления. Особенно редкий подарок
+                            —неожиданные впечатления. Мы уверены: поещение Бункера-42 попадает именно во вторую
+                            категорию. Его масштаб и глубина впечатляют, а история объекта затрагивает самые острые
+                            главы истории послевоенных лет.</p>
+                        <p>
+                            Выберите экскурсию и подарите ее тем, кому
+                            вы желаете провести вечер интересно и неожиданно.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="excursion" class="gift-card">
+        <div class="container collections">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Экскурсии
+                </h2>
+                <a href="#">Все экскурсии</a>
+            </div>
+            <div class="excursion-wrap ">
+                <div class="excursion-box">
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="excursion-box collection-mr">
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-card ">
+                        <div class="card-header">
+                            <div class="title">Спецобъект на Таганке
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-fill.png" alt="">
+                                <img src="assets/images/star-half.png" alt="">
+                            </div>
+                            <div class="price-time">
+                                <div class="time">1ч 10м</div>
+                                <div class="price">750 руб. (550 руб.)</div>
+                            </div>
+                            <p class="description">
+                                Подробный экскурс в тонкости Холодной войны и гонку вооружений. Подробный экскурс в тонкости Холодной войны и гонку вооружений.
+                            </p>
+                            <div class="btn-groups">
+                                <a href="#" class="button2">Подробнее</a>
+                                <a href="#booking-room" class="button booking-popup">Купить в подарок</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#excursion" class="excursion-more button all js-scroll trigger  ">Все экскурсии</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="logo-box">
+                <a href="#" class="logo">
+                    <img src="assets/images/footer-logo.png" alt="">
+                </a>
+                <a href="#" class="scrool-top">Наверх</a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <ul class="footer-nav">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Проведение мероприятий</a></li>
+                <li><a href="#">Квесты</a></li>
+                <li><a href="#">Подарочные сертификаты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="payments">
+                <img src="assets/images/payments.png" alt="">
+            </div>
+            <div class="contacts">
+                <div class="title">Свяжитесь с нами</div>
+                <div class="number-box">
+                    <a href="#">+7 (902) 666-44-22</a>
+                    <a href="#">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="assets/images/visota.png" alt="">
+            <div class="text">
+                <p>© 2010-2021 Бункер-42 </p>
+                <span>Все права защищены.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="booking-room" class="white-popup-block mfp-hide">
+    <div class="section-title">Забронируйте экскурсию онлайн</div>
+    <div class="popup-body">
+        <div class="details">
+            <div class="select">
+                <input class="select__input" type="hidden" name="" value="Мячково">
+                <div class="select__head">Спецобъект на таганке 16+
+
+                </div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item">Спецобъект на таганке 16+
+                    </li>
+                    <li class="select__item">Спецобъект на таганке 16+ 2</li>
+                </ul>
+            </div>
+            <div class="time-date">
+                <div class="date-box">
+                    <input id="datepicker" type="text" class="datepicker-input" value="01.05.2021" name="datepicker"/>
+                </div>
+                <div class="time-box">
+                    <div class="select select1">
+                        <input class="select__input" type="hidden" name="" value="18:00">
+                        <div class="select__head">18:00
+                        </div>
+                        <ul class="select__list" style="display: none;">
+                            <li class="select__item">19:00
+                            </li>
+                            <li class="select__item">20:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="people">
+                <div class="people-category">
+                    <div class="title"></div>
+                    <div class="title">Взрослые</div>
+                    <div class="title">Дети</div>
+                </div>
+                <div class="people-box">
+                    <div class="name">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                             height="16" viewBox="0 0 46 46">
+                            <image id="person-fill" width="46" height="46"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAC8ElEQVRogdWZTUgVURTHfz4rgyZFxCKwhX3QzkQooZVt8q5c2coWkVBukjaBUK2KWriKghZBtGmh7YLkrqyFBtWqTbjoCxKjQp/lSFFSceQMyENz7p077+MPbzNzPn7cd+fOOWfqlnp7CajtwFHgMNCiYeeBV8AL4Gdpqshar+xbAjHvAy4CA8DODWyWgAfAKPAua8JCAP8R4DUw9B9o9N6Q2o5kzZ3FeRswBtwAGhz8GtRnTGN4KQv4PaA/g3+/xigr+KDu56waiI0ZLBd4kz5goTQaG9NUDnBZoeaA4M0a00k+4KcCQnvHdAVvBDpdk6RQZ2xMo4uDK/ghoC4ksapOY6eWK3iUA3SiHS7GruB/nHHS66+LsSv4xxyAvWK7gn8Aio4+aVTU2Knls1UmcgCfiKx12oY+5/gdD5/gMX3ApwOvuqz2tKuTb5F1LtBeL2osZ/mCzwJ9wI8M0OLbF1k7W05w0RRwHJjz8J1T3ynf5Flbt+dAB3AXWElhv6K2HerrrazgaBd/FmgHLgFPgIU19xf0mtxrV9v5rElDdfnovr+uP9YUY06v8rQKCV6qXIAThdgqFVHIFZdRw16dn0iJulWv/waWdSAkhdSvEMl8R3C7gR4dtx0BDgB7Uvp+At4AL3Us9zSy9rMrgAu4dOKngZPAsYCdkDwLz4CHwP3I2m9pnNKA7wIuA2dcuxQPLeuQ6Fpk7RdfcFnR88BVbZLLqe/AFeBWZO26p9NGp4qMiGX+e7MC0GhOyW1jY1rWM1gPvE1L1xP5820qYZiOjWkrNSwFbwUmXUcFOUtYJmNjWjcCrwfGgYNVBJ1ImMZjY+qTC2vBL+jZXK3qUcZVJaeK/A1vN/miUA2St+/+yNqvyYoP1wA0yiisqyte0JI07Su70pKSoU2gu2oIGmXtEvDuKoBxVXdBH8xaU6uAL9Yg+GJBa5Jc26zAElYr4DN6xKQZL1RawjgcWTuTtG63gcc6nQr5RS2kZFz3KLL2PcA/nAucMI5lSVkAAAAASUVORK5CYII="/>
+                        </svg>
+                        РФ и СНГ
+                    </div>
+                    <div class="quantity_inner">
+                        <button class="bt_minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="dash-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                        <input type="text" value="3" size="2" class="quantity" data-max-count="20"/>
+                        <button class="bt_plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="plus-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quantity_inner">
+                        <button class="bt_minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="dash-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                        <input type="text" value="3" size="2" class="quantity" data-max-count="20"/>
+                        <button class="bt_plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="plus-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="people-box">
+                    <div class="name">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                             height="16" viewBox="0 0 46 46">
+                            <image id="person-fill" width="46" height="46"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAC8ElEQVRogdWZTUgVURTHfz4rgyZFxCKwhX3QzkQooZVt8q5c2coWkVBukjaBUK2KWriKghZBtGmh7YLkrqyFBtWqTbjoCxKjQp/lSFFSceQMyENz7p077+MPbzNzPn7cd+fOOWfqlnp7CajtwFHgMNCiYeeBV8AL4Gdpqshar+xbAjHvAy4CA8DODWyWgAfAKPAua8JCAP8R4DUw9B9o9N6Q2o5kzZ3FeRswBtwAGhz8GtRnTGN4KQv4PaA/g3+/xigr+KDu56waiI0ZLBd4kz5goTQaG9NUDnBZoeaA4M0a00k+4KcCQnvHdAVvBDpdk6RQZ2xMo4uDK/ghoC4ksapOY6eWK3iUA3SiHS7GruB/nHHS66+LsSv4xxyAvWK7gn8Aio4+aVTU2Knls1UmcgCfiKx12oY+5/gdD5/gMX3ApwOvuqz2tKuTb5F1LtBeL2osZ/mCzwJ9wI8M0OLbF1k7W05w0RRwHJjz8J1T3ynf5Flbt+dAB3AXWElhv6K2HerrrazgaBd/FmgHLgFPgIU19xf0mtxrV9v5rElDdfnovr+uP9YUY06v8rQKCV6qXIAThdgqFVHIFZdRw16dn0iJulWv/waWdSAkhdSvEMl8R3C7gR4dtx0BDgB7Uvp+At4AL3Us9zSy9rMrgAu4dOKngZPAsYCdkDwLz4CHwP3I2m9pnNKA7wIuA2dcuxQPLeuQ6Fpk7RdfcFnR88BVbZLLqe/AFeBWZO26p9NGp4qMiGX+e7MC0GhOyW1jY1rWM1gPvE1L1xP5820qYZiOjWkrNSwFbwUmXUcFOUtYJmNjWjcCrwfGgYNVBJ1ImMZjY+qTC2vBL+jZXK3qUcZVJaeK/A1vN/miUA2St+/+yNqvyYoP1wA0yiisqyte0JI07Su70pKSoU2gu2oIGmXtEvDuKoBxVXdBH8xaU6uAL9Yg+GJBa5Jc26zAElYr4DN6xKQZL1RawjgcWTuTtG63gcc6nQr5RS2kZFz3KLL2PcA/nAucMI5lSVkAAAAASUVORK5CYII="/>
+                        </svg>
+                        Иностранцы
+                    </div>
+                    <div class="quantity_inner">
+                        <button class="bt_minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="dash-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                        <input type="text" value="3" size="2" class="quantity" data-max-count="20"/>
+                        <button class="bt_plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="plus-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quantity_inner">
+                        <button class="bt_minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="dash-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                        <input type="text" value="3" size="2" class="quantity" data-max-count="20"/>
+                        <button class="bt_plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20" height="20" viewBox="0 0 60 60">
+                                <image id="plus-circle" width="60" height="60"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="individual">
+                <div class="checkbox-wrap d-flex align-items-center">
+                    <input type="checkbox" id="check1" class="checkbox" checked>
+                    <span class="checkbox-toggle">
+                                            </span>
+                    <label for="check1" class="label">Хочу индивидуально</label>
+                </div>
+                <p class="subtitle">Мы можем провести для вас экскурсию без посторонних посетителей</p>
+            </div>
+        </div>
+        <div class="contacts">
+            <form action="">
+                <input class="contacts_input" type="text" name="name" placeholder="Имя">
+                <input class="contacts_input" type="tel" name="name" placeholder="Телефон">
+                <input class="contacts_input" type="email" name="name" placeholder="Email">
+                <div class="individual  checkbox-box">
+                    <div class="checkbox-wrap d-flex align-items-center">
+                        <input type="checkbox" id="check2" class="checkbox" checked>
+                        <span class="checkbox-toggle">
+                                            </span>
+                        <label for="check2" class="label">Принимаю условия <a href="#">оферты</a></label>
+                    </div>
+                </div>
+                <div class="price">
+                    Итого <span>16 600</span> руб.
+                </div>
+                <div class="btn-group">
+                    <a href="#booking-room2" class="button booking-popup">оплатить онлайн</a>
+                    <a href="#" class="button">наличными на месте</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <div class="after"></div>
+</div>
+<div id="booking-room2" class="white-popup-block two mfp-hide ">
+    <div class="section-title">Оплатить бронь</div>
+    <div class="popup-body">
+        <div class="details">
+            <div class="description">
+                Вы можете оплатить билеты онлайн, они придут на вашу электронную почту (распечатывать билет
+                необязательно) или оплатить их на месте за 10 минут до начала экскурсии. Для оформления покупки
+                необходимо ознакомиться с <a href="#">политикой конфиденциальности</a> и разрешением <a href="#">обработки персональных данных</a>,
+                выбрав удобный способ доставки.
+            </div>
+        </div>
+        <div class="contacts">
+            <form action="">
+                <div class="wrapper">
+                    <div class="individual  checkbox-box">
+                        <div class="checkbox-wrap d-flex align-items-center">
+                            <input type="checkbox" id="check3" class="checkbox" checked>
+                            <span class="checkbox-toggle">
+                                            </span>
+                            <label for="check3" class="label">Принимаю условия <a href="#">оферты </a> и
+                                правилами <br>
+                                <a href="#">регистрации данных</a> в реестре РФ</label>
+                        </div>
+                    </div>
+                    <div class="price">
+                        Итого <span>16 600</span> руб.
+                    </div>
+                </div>
+                <div class="warning">
+                    Перед тем как осуществить
+                    онлайн-оплату, пожалуйста, согласуйте
+                    с нашим менеджером.
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="button">оплатить онлайн</a>
+                    <a href="#" class="button">наличными на месте</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <div class="after"></div>
+</div>
+
+<div id="popup-done" class="   white-popup-block mfp-hide ">
+    <div class="title">
+        Спасибо за заказ
+    </div>
+    <p class="description">
+        На указанную почту пришло письмо с деталями вашего похода в Бункер. В ближайшее время с вами свяжется наш
+        оператор.
+    </p>
+    <a href="#" class="button2">На сайт</a>
+
+</div>
+callback2
+<div id="callback-ok" class="   white-popup-block mfp-hide">
+    <p>
+        Звонок заказан. <br> Наш менеджер свяжется с вами<br> в течение часа.
+    </p>
+    <a href="#">Или позвоните нам</a>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"
+        integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+<script src="assets/js/datepicker-full.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

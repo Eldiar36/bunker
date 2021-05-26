@@ -1176,6 +1176,184 @@
         top: 30px;
         right: 20px;
     }
+    /*contacts styles start*/
+
+    #contacts{
+        padding-top: 200px;
+        z-index: 9;
+    }
+    #contacts .contacts-box {
+        background: url("../images/contacts-bg.png")no-repeat;
+        background-size: cover;
+        height: 200px;
+        padding: 26px 17px 26px 17px;
+        display: flex;
+
+        align-items: flex-end;
+    }
+    #contacts .contacts-box .title{
+        font-size: 28px;
+
+    }
+    #contacts-info{
+        padding: 82px 0 95px 0;
+    }
+    #contacts-info .info-wrapper {
+       display: grid;
+        grid-template-columns: 390px auto;
+        grid-column-gap: 62px;
+
+    }
+    #contacts-info .container{
+        padding: 0 40px;
+    }
+    #guides.contacts .title-box .section-title {
+        display:block;
+    }
+    #guides.contacts .address{
+        margin: 0;
+    }
+    #guides.contacts .guide-wrap{
+        display: block;
+    }
+    #guides.contacts .title-box {
+       justify-content: space-between;
+    }
+    #guides.contacts .tabs .tabs__caption {
+        display: flex;
+        margin: 0 0 0 0;
+    }
+    #contacts-info .info-box {
+        padding-right: 26px;
+    }
+    #contacts-info .info-box .info {
+        margin: 0;
+    }
+    #contacts-info .contacts-description {
+        font-size: 16px;
+        line-height: 23px;
+        color: #Ffffff;
+        margin: 42px 0 0 0;
+    }
+    #contacts-info .organization.mobile {
+       display: none;
+    }
+    #contacts-info .organization {
+        margin: 65px 0 0 0;
+        background: none;
+        padding: 0;
+    }
+    #contacts-info .organization {
+        display: grid;
+        grid-template-columns: 390px  auto;
+    }
+    #contacts-info .organization .org-contacts {
+        margin-left: 62px;
+        flex-direction: column;
+    }
+    #contacts-info .organization .org-contacts .number a,
+    #contacts-info .organization .org-contacts .number span,
+    #contacts-info .organization .org-contacts .mail a{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    #contacts-info .organization .org-contacts .number a {
+        font-weight: 700;
+        margin-bottom: 7px;
+
+    }
+    /*contacts styles end*/
+    /*gift-card*/
+
+    #home.gift-card{
+        background: url("../images/gift-pc.png")no-repeat;
+        background-size: contain;
+        padding: 407px 0 60px 0;
+    }
+    #home.gift-card .home-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 55px;
+    }
+    #home.gift-card .home-box .wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #home.gift-card .home-box .description p {
+        text-align: left;
+        margin: 0;
+    }
+    #home.gift-card .home-box .title {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        font-size: 45px;
+        line-height: 56px;
+    }
+    #home.gift-card .home-box .button{
+        margin:45px 0 0 0;
+
+    }
+    #excursion.gift-card {
+        padding: 0 0 20px 0;
+    }
+    #excursion.gift-card .button.all {
+      display: none;
+    }
+    #excursion.gift-card .excursion-box.collection-mr {
+        display: none;
+    }
+    #excursion .section-title-wrap a {
+        text-decoration: underline;
+    }
+    #excursion.gift-card .ex-card  .button2{
+        display: none;
+    }
+    #excursion.gift-card .ex-card .button{
+        background: none;
+        border: 1px solid #f34747;
+        width: 180px;
+        color: #f34747;
+        margin-top: 32px;
+    }
+    #excursion.gift-card .btn-groups {
+      display: block;
+    }
+    /*gift-card*/
+    /*dropdown menu*/
+    .dropdown{
+        position: relative;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 101%;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        z-index: 1;
+        background: none;
+        background: #1c1c1c;border: 1px solid #f34747;
+
+    }
+    header nav .nav-menu .dropdown-content li{
+        padding: 7px 0;
+        text-align: center;
+        border-bottom: 1px solid #f34747;
+    }
+    header nav .nav-menu li .dropdown-content li:last-child{
+        border-bottom: none;
+    }
+    header nav .nav-menu li .dropdown-content li a {
+        color: #Ffffff;
+        font-size: 12px!important;
+    }
+    header nav .nav-menu li .dropdown-content li a:hover{
+        color: #f34747;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1200px){
     .call-me-box {
