@@ -1321,12 +1321,7 @@
     }
     /*gift-card*/
     /*dropdown menu*/
-    .dropdown{
-        position: relative;
-    }
-    .dropdown:hover .dropdown-content{
-        display: block;
-    }
+
     .dropdown-content {
         display: none;
         position: absolute;

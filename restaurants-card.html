@@ -24,11 +24,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 </head>
+
 <body class="restaurant-card">
 <header class="header">
     <div class="container">
         <div class="header-top">
-            <a href="#" class="gift-cert">
+            <a href="gift-card.html" class="gift-cert">
                 Подарочные сертификаты
             </a>
             <a href="index.html" class="logo">
@@ -36,7 +37,6 @@
                 <img src="assets/images/back.png" class="mobile" alt="">
             </a>
             <div class="right">
-
                 <div class="burger-menu" id="burger-menu">
                     <div class="burger-menu_button">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5"
@@ -67,7 +67,7 @@
                                     Экскурсии
                                 </a>
                             </li>
-                            <li>
+                            <li class="dropdown">
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                          width="14" height="14" viewBox="0 0 40 40">
@@ -76,9 +76,13 @@
                                     </svg>
                                     Квесты
                                 </a>
+                                <ul class="dropdown-content">
+                                    <li><a href="firetag.html">Фаертаг</a></li>
+                                    <li><a href="lazertag.html">Лазертаг</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="restaurants.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                          width="14" height="13" viewBox="0 0 42 38">
                                         <image id="collection-fill" width="42" height="38"
@@ -88,7 +92,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="contacts.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                          width="14" height="14" viewBox="0 0 42 42">
                                         <image id="map-fill" width="42" height="42"
@@ -98,7 +102,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="#" class="gift-certificate">
+                        <a href="gift-card.html" class="gift-certificate">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                  width="16" height="16" viewBox="0 0 48 48">
                                 <image id="gift-fill" width="48" height="48"
@@ -113,12 +117,14 @@
                     </nav>
                 </div>
                 <div class="call-me-box-mobile">
-                    <a  class="call callback-popup">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    <a class="call callback-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#f34747"
+                             class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                         </svg>
                     </a>
-                    <div  class=" callback-form ">
+                    <div class=" callback-form ">
                         <div class="content">
                             <div class="section-title">Куда вам перезвонить?</div>
                             <form action="">
@@ -134,10 +140,8 @@
 
                     </div>
                 </div>
-
             </div>
             <div class="right-pc">
-
                 <a href="#" class="number">
                     +7 (499) 375-21-25
                 </a>
@@ -153,16 +157,22 @@
             <div class="nav-wrap d-flex">
                 <ul class="nav-menu d-flex">
                     <li><a href="index.html"> главная</a></li>
-                    <li><a href="#"> Экскурсии</a></li>
-                    <li><a href="#"> Квесты</a></li>
-                    <li><a href="#"> проведение мероприятий</a></li>
-                    <li><a href="#"> контакты</a></li>
+                    <li><a href="hub-excursion.html"> Экскурсии</a></li>
+                    <li class="dropdown">
+                        <a href="#"> Квесты</a>
+                        <ul class="dropdown-content">
+                            <li><a href="firetag.html">Фаертаг</a></li>
+                            <li><a href="lazertag.html">Лазертаг</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="restaurants.html"> проведение мероприятий</a></li>
+                    <li><a href="contacts.html"> контакты</a></li>
                 </ul>
                 <div class="call-me-box">
                     <a href="#callback-form" id="but1" data-toggle="modal" class="call-me callback-popup">
                         Обратный звонок
                     </a>
-                    <div  class=" callback-form ">
+                    <div class=" callback-form ">
                         <div class="content">
                             <div class="section-title">Куда вам перезвонить?</div>
                             <form action="">

@@ -2936,11 +2936,35 @@ img.mfp-img {
 
 
 /*contacts.html styles start*/
-
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 27px;
+    right: 0;
+    max-width: 100%;
+    z-index: 1;
+    background: none;
+    border: none;
+}
+.burger-menu .burger-menu_nav .mobile-menu .dropdown-content li {
+    margin-bottom: 10px;
+}
+.burger-menu .burger-menu_nav .mobile-menu .dropdown-content li:last-child{
+    margin-bottom: 0;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown:hover{
+    padding-bottom: 60px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
 #contacts {
     padding: 83px 0 20px 0;
     position: relative;
-    z-index: 100000;
 }
 
 #contacts  .title {
@@ -2948,6 +2972,8 @@ img.mfp-img {
     line-height: 36px;
     color: #Ffffff;
     font-weight: 700;
+    position: relative;
+    z-index: 100000;
 }
 #contacts-info .info-box .info {
     margin: 27px 20px 0 20px;
