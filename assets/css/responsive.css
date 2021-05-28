@@ -1291,7 +1291,13 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    #home.gift-card .home-box .description p {
+    #home.gift-card .home-box .description.pc{
+        display: block;
+    }
+    #description{
+        display: none;
+    }
+    #home.gift-card .home-box .description.pc p {
         text-align: left;
         margin: 0;
     }

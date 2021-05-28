@@ -3051,9 +3051,11 @@ img.mfp-img {
 
 #home.gift-card{
     background: url("../images/gifr-card.png")no-repeat;
-    background-size: contain;
-    padding: 423px 0 60px 0;
+    background-size: cover;
+    padding: 423px 0 20px 0;
+    position: relative;
 }
+
 #home.gift-card .home-box .title{
     margin-bottom: 27px;
 }
@@ -3064,12 +3066,24 @@ img.mfp-img {
     width: 202px;
     margin-bottom: 52px;
 }
-#home.gift-card .home-box .description p {
+#home.gift-card .home-box .description.pc{
+    display: none;
+}
+
+#home.gift-card .home-box .description p,
+#description p{
     font-size: 16px;
     line-height: 20px;
     color: #Ffffff;
     margin: 0;
 }
+#description p:first-child{
+    margin-bottom: 33px;
+}
+#excursion.gift-card .section-title-wrap a {
+   display: none;
+}
+
 #home.gift-card .home-box .description p:first-child{
    margin: 0 0 33px 0;
 }
