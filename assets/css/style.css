@@ -2962,6 +2962,10 @@ img.mfp-img {
 .dropdown:hover .dropdown-content{
     display: block;
 }
+body.gift-card header{
+    background: url("../images/shade.png")no-repeat bottom;
+    background-size: cover;
+}
 #contacts {
     padding: 83px 0 20px 0;
     position: relative;

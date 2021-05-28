@@ -1276,7 +1276,10 @@
     }
     /*contacts styles end*/
     /*gift-card*/
-
+    body.gift-card header {
+        background: url('../images/header-shade.png')no-repeat;
+        background-size: cover;
+    }
     #home.gift-card{
         background: url("../images/gift-pc.png")no-repeat;
         background-size: contain;
@@ -1296,6 +1299,9 @@
     }
     #description{
         display: none;
+    }
+    .dropdown:hover{
+        padding-bottom: 0;
     }
     #home.gift-card .home-box .description.pc p {
         text-align: left;
@@ -1377,6 +1383,9 @@
     }
     .footer-center .footer-nav li a {
         font-size: 13px;
+    }
+    header nav .nav-menu li a {
+        font-size: 11px;
     }
 }
 @media (max-width: 991px) {
@@ -1527,6 +1536,7 @@
         display: none;
     }
 }
+
 @media (max-width: 365px) {
     #booking-room.firetag .people .people-box {
         grid-template-columns: 1fr 0.9fr;
