@@ -3060,8 +3060,9 @@ body.gift-card header{
     position: relative;
 }
 
-#home.gift-card .home-box .title{
+#home.gift-card .home-box .title {
     margin-bottom: 27px;
+    margin-top: 60px;
 }
 #home.gift-card .home-box {
     padding-right: 0;
