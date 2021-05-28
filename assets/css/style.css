@@ -3056,7 +3056,7 @@ body.gift-card header{
 #home.gift-card{
     background: url("../images/gifr-card.png")no-repeat;
     background-size: cover;
-    padding: 423px 0 20px 0;
+    padding: 423px 0 40px 0;
     position: relative;
 }
 
@@ -3068,7 +3068,7 @@ body.gift-card header{
 }
 #home.gift-card .home-box .button{
     width: 202px;
-    margin-bottom: 52px;
+
 }
 #home.gift-card .home-box .description.pc{
     display: none;
