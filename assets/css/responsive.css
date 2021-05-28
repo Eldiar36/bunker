@@ -1251,16 +1251,28 @@
         margin-left: 62px;
         flex-direction: column;
     }
+    #contacts-info .organization .org-contacts .social{
+        display: flex;
+    }
     #contacts-info .organization .org-contacts .number a,
     #contacts-info .organization .org-contacts .number span,
     #contacts-info .organization .org-contacts .mail a{
         font-size: 16px;
         line-height: 23px;
     }
+    #contacts-info .organization .org-contacts .number span a {
+        font-weight: 400;
+    }
     #contacts-info .organization .org-contacts .number a {
         font-weight: 700;
         margin-bottom: 7px;
 
+    }
+    #contacts-info .organization.pc {
+        display: grid;
+    }
+    #contacts-info .organization.mobile {
+        display: none;
     }
     /*contacts styles end*/
     /*gift-card*/
